@@ -1,0 +1,1929 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>GoldFishMedia</title>
+
+    <link rel="stylesheet" href="bundle/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="fonts/Akzidenz-GroteskPro/stylesheet.css" />
+    <link rel="stylesheet" href="fonts/Gilroy/stylesheet.css" />
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css?v=1300" />
+    <link rel="stylesheet" href="css/style-media.css?v=1300" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  </head>
+  <body>
+    <header>
+      <div class="body_content">
+        <div class="header_row d-flex align-items-center justify-content-between">
+          <div class="header_menu_mobile d-lg-none btn-modal" data-target="#modal-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40" fill="none">
+              <path d="M4.60034 12H35.6003" stroke="white" stroke-width="1.7" stroke-linecap="round" />
+              <path d="M3.60034 20L19.6003 20" stroke="white" stroke-width="1.7" stroke-linecap="round" />
+              <path d="M4.60034 28H35.6003" stroke="white" stroke-width="1.7" stroke-linecap="round" />
+            </svg>
+          </div>
+
+          <div class="header_logo">
+            <a href="/">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="152"
+                height="40"
+                viewBox="0 0 152 40"
+                fill="none"
+              >
+                <path
+                  d="M54.5323 0.534973H61.657L74.5312 13.6697V23.893L62.4069 11.5031V39.4651H54.5323V0.534973ZM97.5924 0.534973H90.5303L77.5936 13.6697V23.893L89.7179 11.5031V39.4651H97.5924V0.534973Z"
+                  fill="white"
+                />
+                <path
+                  d="M0 5.20647V34.8611L7.31209 39.465H19.9989V31.8144H8.12455V8.52399H20.2489V0.534851H7.31209L0 5.20647ZM43.3101 13.1279H35.1855V8.52399H23.0612V0.534851H35.998L43.3101 5.20647V13.1279ZM43.3101 16.1746V34.8611L35.998 39.465H23.3112V31.8144H35.1855V23.8929H23.0612V16.1746H43.3101Z"
+                  fill="white"
+                />
+                <path
+                  d="M108.689 5.20659V34.8612L116.001 39.4651H128.688V31.8145H116.814V8.52411H128.938V0.534973H116.001L108.689 5.20659ZM151.999 13.128H143.875V8.52411H131.75V0.534973H144.687L151.999 5.20659V13.128ZM151.999 16.1747V34.8612L144.687 39.4651H132V31.8145H143.875V23.893H131.75V16.1747H151.999Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <div class="header_right_menu d-lg-none btn-modal" data-target="#modal-soc">
+            <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40" fill="none">
+              <path
+                d="M8.10047 21.25C8.09914 24.0176 8.80984 26.739 10.1642 29.1525C9.23172 29.2775 8.11922 29.4613 7.36421 29.585C6.36811 29.7791 5.36197 29.9177 4.35047 30C4.1524 30.0001 3.95716 29.9531 3.78083 29.8628C3.6045 29.7726 3.45214 29.6418 3.33629 29.4812C3.22044 29.3205 3.14442 29.1346 3.11451 28.9388C3.08459 28.743 3.10163 28.5429 3.16422 28.355C4.06297 25.6613 4.12422 25.48 4.94172 23.1263C3.37163 20.4133 2.77616 17.2452 3.25409 14.1473C3.73201 11.0494 5.2546 8.20803 7.56931 6.09441C9.88401 3.9808 12.8517 2.72199 15.9801 2.5268C19.1086 2.33161 22.2097 3.21177 24.7692 5.02127C24.6292 5.01752 24.4917 5.00002 24.3505 5.00002C20.0422 5.00499 15.9119 6.71863 12.8655 9.76502C9.81907 12.8114 8.10543 16.9418 8.10047 21.25ZM38.0367 33.355C38.0993 33.5429 38.1163 33.743 38.0864 33.9388C38.0565 34.1346 37.9805 34.3205 37.8646 34.4812C37.7488 34.6418 37.5964 34.7726 37.4201 34.8628C37.2438 34.953 37.0485 35.0001 36.8505 35C35.839 34.9177 34.8328 34.7791 33.8367 34.585C32.5367 34.3725 30.158 33.98 29.5092 33.9988C26.4936 35.2199 23.1427 35.3322 20.0521 34.3156C16.9615 33.2991 14.3315 31.2195 12.6296 28.4467C10.9277 25.6738 10.2642 22.3873 10.757 19.1713C11.2498 15.9554 12.867 13.0184 15.3211 10.8824C17.7752 8.74638 20.9073 7.5498 24.1604 7.50535C27.4136 7.4609 30.5772 8.57145 33.0888 10.6396C35.6003 12.7077 37.2972 15.5995 37.8777 18.8007C38.4582 22.002 37.8847 25.3054 36.2592 28.1238C37.0767 30.4763 37.138 30.6613 38.0367 33.355ZM20.6005 21.25C20.6005 20.9185 20.4688 20.6006 20.2343 20.3661C19.9999 20.1317 19.682 20 19.3505 20H18.1005C17.7689 20 17.451 20.1317 17.2166 20.3661C16.9822 20.6006 16.8505 20.9185 16.8505 21.25C16.8505 21.5815 16.9822 21.8995 17.2166 22.1339C17.451 22.3683 17.7689 22.5 18.1005 22.5H19.3505C19.682 22.5 19.9999 22.3683 20.2343 22.1339C20.4688 21.8995 20.6005 21.5815 20.6005 21.25ZM26.8505 21.25C26.8505 20.9185 26.7188 20.6006 26.4843 20.3661C26.2499 20.1317 25.932 20 25.6005 20H24.3505C24.0189 20 23.701 20.1317 23.4666 20.3661C23.2322 20.6006 23.1005 20.9185 23.1005 21.25C23.1005 21.5815 23.2322 21.8995 23.4666 22.1339C23.701 22.3683 24.0189 22.5 24.3505 22.5H25.6005C25.932 22.5 26.2499 22.3683 26.4843 22.1339C26.7188 21.8995 26.8505 21.5815 26.8505 21.25ZM33.1005 21.25C33.1005 20.9185 32.9688 20.6006 32.7343 20.3661C32.4999 20.1317 32.182 20 31.8505 20H30.6005C30.2689 20 29.951 20.1317 29.7166 20.3661C29.4822 20.6006 29.3505 20.9185 29.3505 21.25C29.3505 21.5815 29.4822 21.8995 29.7166 22.1339C29.951 22.3683 30.2689 22.5 30.6005 22.5H31.8505C32.182 22.5 32.4999 22.3683 32.7343 22.1339C32.9688 21.8995 33.1005 21.5815 33.1005 21.25Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+
+          <div class="header_menu d-lg-flex d-none">
+            <div class="header_menu_item">
+              <a href="">Услуги</a>
+            </div>
+
+            <div class="header_menu_item">
+              <a href="">Портфолио</a>
+            </div>
+
+            <div class="header_menu_item">
+              <a href="">О нас</a>
+            </div>
+
+            <div class="header_menu_item">
+              <a href="">Вакансии</a>
+            </div>
+
+            <div class="header_menu_item">
+              <a href="">Контакты</a>
+            </div>
+          </div>
+
+          <div class="header_menu_right d-lg-flex d-none align-items-center">
+            <div class="btn_arrow_right btn_arrow_right_header btn-modal" data-target="#modal-feedback">
+              <span>Отправить бриф</span>
+              <div class="btn_arrow_right_icon">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="13"
+                    viewBox="0 0 19 13"
+                    fill="none"
+                  >
+                    <path
+                      d="M0.99939 5.5L-0.000609719 5.5L-0.00061002 7.5L0.99939 7.5L0.99939 5.5ZM17.9994 6.5L18.6655 7.24587L18.6655 5.75413L17.9994 6.5ZM0.99939 7.5L17.9994 7.5L17.9994 5.5L0.99939 5.5L0.99939 7.5ZM18.6655 5.75413L12.5067 0.254129L11.1746 1.74587L17.3333 7.24587L18.6655 5.75413ZM17.3333 5.75413L11.1746 11.2541L12.5067 12.7459L18.6655 7.24587L17.3333 5.75413Z"
+                      fill="#CA116A"
+                    />
+                  </svg>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="13"
+                    viewBox="0 0 19 13"
+                    fill="none"
+                  >
+                    <path
+                      d="M0.99939 5.5L-0.000609719 5.5L-0.00061002 7.5L0.99939 7.5L0.99939 5.5ZM17.9994 6.5L18.6655 7.24587L18.6655 5.75413L17.9994 6.5ZM0.99939 7.5L17.9994 7.5L17.9994 5.5L0.99939 5.5L0.99939 7.5ZM18.6655 5.75413L12.5067 0.254129L11.1746 1.74587L17.3333 7.24587L18.6655 5.75413ZM17.3333 5.75413L11.1746 11.2541L12.5067 12.7459L18.6655 7.24587L17.3333 5.75413Z"
+                      fill="#CA116A"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="header_menu_soc header_menu_soc_wa">
+              <a href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M12.001 2C17.524 2 22.001 6.477 22.001 12C22.001 17.523 17.524 22 12.001 22C10.2338 22.0029 8.49765 21.5352 6.97099 20.645L2.00499 22L3.35699 17.032C2.46608 15.5049 1.99804 13.768 2.00099 12C2.00099 6.477 6.47799 2 12.001 2ZM8.59299 7.3L8.39299 7.308C8.26351 7.31589 8.13697 7.3499 8.02099 7.408C7.91251 7.46943 7.81349 7.54622 7.72699 7.636C7.60699 7.749 7.53899 7.847 7.46599 7.942C7.09611 8.4229 6.89696 9.01331 6.89999 9.62C6.90199 10.11 7.02999 10.587 7.22999 11.033C7.63899 11.935 8.31199 12.89 9.19999 13.775C9.41399 13.988 9.62399 14.202 9.84999 14.401C10.9534 15.3725 12.2682 16.073 13.69 16.447L14.258 16.534C14.443 16.544 14.628 16.53 14.814 16.521C15.1052 16.506 15.3896 16.4271 15.647 16.29C15.7779 16.2225 15.9057 16.1491 16.03 16.07C16.03 16.07 16.073 16.042 16.155 15.98C16.29 15.88 16.373 15.809 16.485 15.692C16.568 15.606 16.64 15.505 16.695 15.39C16.773 15.227 16.851 14.916 16.883 14.657C16.907 14.459 16.9 14.351 16.897 14.284C16.893 14.177 16.804 14.066 16.707 14.019L16.125 13.758C16.125 13.758 15.255 13.379 14.723 13.137C14.6673 13.1127 14.6077 13.0988 14.547 13.096C14.4786 13.089 14.4094 13.0967 14.3442 13.1186C14.279 13.1405 14.2193 13.1761 14.169 13.223C14.164 13.221 14.097 13.278 13.374 14.154C13.3325 14.2098 13.2753 14.2519 13.2098 14.2751C13.1443 14.2982 13.0733 14.3013 13.006 14.284C12.9408 14.2665 12.877 14.2445 12.815 14.218C12.691 14.166 12.648 14.146 12.563 14.11C11.9891 13.8595 11.4577 13.5211 10.988 13.107C10.862 12.997 10.745 12.877 10.625 12.761C10.2316 12.3842 9.88871 11.958 9.60499 11.493L9.54599 11.398C9.50361 11.3342 9.46935 11.2653 9.44399 11.193C9.40599 11.046 9.50499 10.928 9.50499 10.928C9.50499 10.928 9.74799 10.662 9.86099 10.518C9.97099 10.378 10.064 10.242 10.124 10.145C10.242 9.955 10.279 9.76 10.217 9.609C9.93699 8.925 9.64699 8.244 9.34899 7.568C9.28999 7.434 9.11499 7.338 8.95599 7.319C8.90199 7.313 8.84799 7.307 8.79399 7.303C8.6597 7.29633 8.52513 7.29766 8.39099 7.307L8.59299 7.3Z"
+                    fill="#E8E8E8"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <div class="header_menu_soc header_menu_soc_tg">
+              <a href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_2007_961)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M22 11C22 17.0751 17.0751 22 11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11ZM11.3942 8.12068C10.3243 8.5657 8.18596 9.48676 4.97924 10.8839C4.45851 11.091 4.18574 11.2935 4.1609 11.4916C4.11894 11.8264 4.53815 11.9582 5.10901 12.1377C5.18667 12.1621 5.26712 12.1874 5.34961 12.2142C5.91125 12.3968 6.66676 12.6104 7.05951 12.6189C7.41578 12.6266 7.81342 12.4797 8.25242 12.1782C11.2486 10.1558 12.7952 9.13349 12.8923 9.11145C12.9608 9.09591 13.0557 9.07636 13.12 9.13352C13.1844 9.19069 13.178 9.29896 13.1712 9.328C13.1297 9.50504 11.4841 11.0349 10.6325 11.8266C10.367 12.0734 10.1787 12.2485 10.1402 12.2885C10.054 12.3781 9.96612 12.4628 9.88165 12.5442C9.35987 13.0472 8.96859 13.4244 9.90331 14.0404C10.3525 14.3364 10.712 14.5812 11.0705 14.8254C11.4622 15.0921 11.8528 15.3581 12.3581 15.6894C12.4869 15.7738 12.6099 15.8614 12.7296 15.9468C13.1854 16.2717 13.5949 16.5636 14.1007 16.5171C14.3946 16.49 14.6983 16.2136 14.8525 15.3893C15.2169 13.4412 15.9332 9.22025 16.0987 7.48089C16.1132 7.3285 16.095 7.13347 16.0803 7.04786C16.0657 6.96225 16.035 6.84027 15.9238 6.74997C15.792 6.64303 15.5885 6.62047 15.4975 6.62208C15.0838 6.62937 14.449 6.85008 11.3942 8.12068Z"
+                      fill="#E8E8E8"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2007_961">
+                      <rect width="22" height="22" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="content">
+      <section class="section_works-wrapper section_works-wrapper--portfolio">
+        <div class="section_works section_works--portfolio">
+          <div class="body_content">
+            <div class="section_works__header">
+              <h2 class="section_works__title">Портфолио</h2>
+              <ul class="section_works__list">
+                <li class="section_works__item">
+                  <button class="section_works__btn">
+                    <span>Сайты</span>
+                    <sup>12</sup>
+                  </button>
+                </li>
+                <li class="section_works__item">
+                  <button class="section_works__btn isActive">
+                    <span>Рекламные кампании</span>
+                    <sup>12</sup>
+                  </button>
+                </li>
+                <li class="section_works__item">
+                  <button class="section_works__btn">
+                    <span>Промо-сайты</span>
+                    <sup>12</sup>
+                  </button>
+                </li>
+                <li class="section_works__item">
+                  <button class="section_works__btn">
+                    <span>Дизайн</span>
+                    <sup>12</sup>
+                  </button>
+                </li>
+                <li class="section_works__item">
+                  <button class="section_works__btn">
+                    <span>Брендинг</span>
+                    <sup>12</sup>
+                  </button>
+                </li>
+                <li class="section_works__item">
+                  <button class="section_works__btn">
+                    <span>Приложения</span>
+                    <sup>12</sup>
+                  </button>
+                </li>
+                <li class="section_works__item">
+                  <button class="section_works__btn">
+                    <span>3D</span>
+                    <sup>12</sup>
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="works_row row justify-content-between align-items-end">
+              <div class="works_item articles_small works_item--posterisan">
+                <div class="works_item_image">
+                  <!-- <img
+                    class="d-none d-sm-block"
+                    src="images/works_item_image_1.png"
+                  />
+    -->
+
+                  <img class="d-none d-sm-block hover-bg" src="images/works_item_image_bg_1.png" />
+                  <img class="d-none d-sm-block hover-img" src="images/works_item_image_img_1.png" />
+
+                  <!-- <img
+                class="d-block d-sm-none hover-bg"
+                src="images/works_item_image_bg_1_mob.png"
+              /> 
+                <img
+                class="d-block d-sm-none hover-img"
+                src="images/works_item_image_img_1_mob.png"
+              />  -->
+
+                  <img class="d-block d-sm-none" src="images/works_item_image_mb_1.png" />
+                </div>
+                <div class="works_item_name">
+                  <h4>Постеризан</h4>
+                  <p>Средство от молочницы для женщин одо 40</p>
+
+                  <div><span>Корпоративные сайты</span> | <span>Строительство</span></div>
+                </div>
+              </div>
+
+              <div class="works_item articles_medium">
+                <div class="works_item_image">
+                  <img class="d-none d-sm-block" src="images/works_item_image_2.png" />
+                  <img class="d-block d-sm-none" src="images/works_item_image_mb_2.png" />
+                </div>
+                <div class="works_item_name">
+                  <h4>«Olivia»</h4>
+                  <p>Приложение для женского здоровья</p>
+                </div>
+              </div>
+
+              <div class="works_item articles_big">
+                <div class="works_item_image">
+                  <img class="d-none d-sm-block" src="images/works_item_image_3.png" />
+                  <img class="d-block d-sm-none" src="images/works_item_image_mb_3.png" />
+                </div>
+                <div class="works_item_name">
+                  <h4>Индинол</h4>
+                  <p>Средство от молочницы для женщин до 40</p>
+                </div>
+              </div>
+
+              <div class="works_item articles_small">
+                <div class="works_item_image">
+                  <img class="d-none d-sm-block" src="images/works_item_image_4.png" />
+                  <img class="d-block d-sm-none" src="images/works_item_image_mb_4.png" />
+                </div>
+                <div class="works_item_name">
+                  <h4>Чеки из аптеки</h4>
+                  <p>Кэшбэк приложение для фарм рынка</p>
+                </div>
+              </div>
+
+              <div class="works_item articles_medium">
+                <div class="works_item_image">
+                  <img class="d-none d-sm-block" src="images/works_item_image_5.png" />
+                  <img class="d-block d-sm-none" src="images/works_item_image_mb_5.png" />
+                </div>
+                <div class="works_item_name">
+                  <h4>Экоцистин</h4>
+                  <p>Средство от молочницы для женщин одо 40</p>
+                </div>
+              </div>
+
+              <div class="works_item articles_big articles_big2">
+                <div class="works_item_image">
+                  <img class="d-none d-sm-block" src="images/works_item_image_6.png" />
+                  <img class="d-block d-sm-none" src="images/works_item_image_mb_6.png" />
+                </div>
+                <div class="works_item_name">
+                  <h4>Native Slider: Карницетин</h4>
+                  <p>Нативный слайдер по продвижению продукции карницетин</p>
+                </div>
+              </div>
+
+              <div class="works_item articles_big works_item--rino">
+                <div class="works_item_image">
+                  <img class="d-none d-sm-block works_item_image--rino" src="images/rinoNoBtn.webp" />
+                  <img class="d-block d-sm-none" src="images/rinoNoBtnMob.png" />
+
+                  <a href="#" class="works_item-rino-link">
+                    <p class="works_item-rino-link-text">Кейс на Adindex</p>
+                  </a>
+
+                  <div class="d-none d-sm-block works_item_cloud-box">
+                    <img
+                      class="d-none d-sm-block works_item_cloud works_item_cloud--left"
+                      src="images/cloud_bottom.png"
+                    />
+                    <img
+                      class="d-none d-sm-block works_item_cloud works_item_cloud--top"
+                      src="images/cloud_top.png"
+                    />
+                    <img
+                      class="d-none d-sm-block works_item_cloud works_item_cloud--middle"
+                      src="images/cloud_middle.png"
+                    />
+                    <img
+                      class="d-none d-sm-block works_item_cloud works_item_cloud--bottom"
+                      src="images/cloud_bottom.png"
+                    />
+                  </div>
+                </div>
+                <div class="works_item_name">
+                  <!-- <h4>Индинол</h4>
+                  <p>Средство от молочницы для женщин до 40</p> -->
+                </div>
+              </div>
+
+              <div class="works_item articles_small">
+                <div class="works_item_image">
+                  <img class="d-none d-sm-block" src="images/works_item_image_4.png" />
+                  <img class="d-block d-sm-none" src="images/works_item_image_mb_4.png" />
+                </div>
+                <div class="works_item_name">
+                  <h4>Чеки из аптеки</h4>
+                  <p>Кэшбэк приложение для фарм рынка</p>
+                </div>
+              </div>
+
+              <div class="works_item articles_medium">
+                <div class="works_item_image">
+                  <img class="d-none d-sm-block" src="images/works_item_image_2.png" />
+                  <img class="d-block d-sm-none" src="images/works_item_image_mb_2.png" />
+                </div>
+                <div class="works_item_name">
+                  <h4>«Olivia»</h4>
+                  <p>Приложение для женского здоровья</p>
+                </div>
+              </div>
+
+              <div class="works_item articles_big">
+                <div class="works_item_image">
+                  <img class="d-none d-sm-block" src="images/works_item_image_3.png" />
+                  <img class="d-block d-sm-none" src="images/works_item_image_mb_3.png" />
+                </div>
+                <div class="works_item_name">
+                  <h4>Индинол</h4>
+                  <p>Средство от молочницы для женщин до 40</p>
+                </div>
+              </div>
+
+              <div class="works_item articles_small">
+                <div class="works_item_image">
+                  <img class="d-none d-sm-block" src="images/works_item_image_4.png" />
+                  <img class="d-block d-sm-none" src="images/works_item_image_mb_4.png" />
+                </div>
+                <div class="works_item_name">
+                  <h4>Чеки из аптеки</h4>
+                  <p>Кэшбэк приложение для фарм рынка</p>
+                </div>
+              </div>
+
+              <div class="works_item articles_medium">
+                <div class="works_item_image">
+                  <img class="d-none d-sm-block" src="images/works_item_image_5.png" />
+                  <img class="d-block d-sm-none" src="images/works_item_image_mb_5.png" />
+                </div>
+                <div class="works_item_name">
+                  <h4>Экоцистин</h4>
+                  <p>Средство от молочницы для женщин одо 40</p>
+                </div>
+              </div>
+
+              <div class="works_item articles_big articles_big2">
+                <div class="works_item_image">
+                  <img class="d-none d-sm-block" src="images/works_item_image_6.png" />
+                  <img class="d-block d-sm-none" src="images/works_item_image_mb_6.png" />
+                </div>
+                <div class="works_item_name">
+                  <h4>Native Slider: Карницетин</h4>
+                  <p>Нативный слайдер по продвижению продукции карницетин</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="api_maps">
+        <div class="block_map" id="map">
+          <div class="btns-map">
+            <div class="btn-map-plus">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+                <path
+                  d="M12 0.029065V22.6565M0.686279 11.3428H23.3137"
+                  stroke="#101212"
+                  stroke-width="1.33333"
+                />
+              </svg>
+            </div>
+
+            <div class="btn-map-minus">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+                <path d="M0.686279 11.3428H23.3137" stroke="#A9A9A9" stroke-width="1.33333" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="contacts_map">
+            <h3>Наши контакты</h3>
+
+            <div class="contacts_row">
+              <div class="contacts_icon">
+                <img src="images/contacts_phone.svg" />
+              </div>
+
+              <div class="contacts_text">
+                <a href="telto:"> +7 (495) 783 43 63 </a><br />
+                <a href="telto:"> +7 (495) 783 43 62 </a>
+              </div>
+            </div>
+
+            <div class="contacts_row">
+              <div class="contacts_icon">
+                <img src="images/contacts_mail.svg" />
+              </div>
+
+              <div class="contacts_text">
+                <a href="mailto:hi@goldfishmedia.group"> hi@goldfishmedia.group </a>
+              </div>
+            </div>
+
+            <div class="contacts_row">
+              <div class="contacts_icon">
+                <img src="images/contacts_place.svg" />
+              </div>
+
+              <div class="contacts_text">
+                <span> Москва <br />ул.Новодмитровская, 2к1 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <button class="filter-btn btn-modal" data-target="#filter-modal">
+      <div class="filter-btn__svg-wrapper">
+        <div class="filter-btn__svg-box">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20.5999 4.1001V6.3001C20.5999 7.1001 20.0999 8.1001 19.5999 8.6001L15.2999 12.4001C14.6999 12.9001 14.2999 13.9001 14.2999 14.7001V19.0001C14.2999 19.6001 13.8999 20.4001 13.3999 20.7001L11.9999 21.6001C10.6999 22.4001 8.89988 21.5001 8.89988 19.9001V14.6001C8.89988 13.9001 8.49989 13.0001 8.09989 12.5001L7.62989 12.0101C7.31989 11.6801 7.25989 11.1801 7.50989 10.7901L12.6299 2.5701C12.8099 2.2801 13.1299 2.1001 13.4799 2.1001H18.5999C19.6999 2.1001 20.5999 3.0001 20.5999 4.1001Z"
+              fill="white"
+            />
+            <path
+              d="M10.3499 3.6301L6.7999 9.3201C6.4599 9.8701 5.6799 9.9501 5.2299 9.4801L4.2999 8.5001C3.7999 8.0001 3.3999 7.1001 3.3999 6.5001V4.2001C3.3999 3.0001 4.2999 2.1001 5.3999 2.1001H9.4999C10.2799 2.1001 10.7599 2.9601 10.3499 3.6301Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
+
+    <div class="modal filter-modal" id="filter-modal">
+      <div class="modal-content-right">
+        <div class="modal-content-close close" data-dismiss="#filter-modal">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+            <path d="M25 1L1 25M1 1L25 25" stroke="#E8E8E8" stroke-width="2" />
+          </svg>
+        </div>
+
+        <div class="modal-title">
+          <h3>Фильтры</h3>
+        </div>
+
+        <form class="filter-modal__form">
+          <div class="filter-modal__inputs-wrapper">
+            <div class="filter-modal__inputs-block">
+              <p class="filter-modal__inputs-title">Типы сайтов</p>
+
+              <div class="filter-modal__inputs-group">
+                <label class="filter-modal__input-label">
+                  <input class="filter-modal__input" type="checkbox" id="" checked />
+                  <span class="filter-modal__input-text">
+                    <span>Все</span>
+                    <sup>12</sup>
+                  </span>
+                </label>
+                <label class="filter-modal__input-label">
+                  <input class="filter-modal__input" type="checkbox" id="" />
+                  <span class="filter-modal__input-text">
+                    <span>Сайт-визитка</span>
+                    <sup>12</sup>
+                  </span>
+                </label>
+                <label class="filter-modal__input-label">
+                  <input class="filter-modal__input" type="checkbox" id="" />
+                  <span class="filter-modal__input-text">
+                    <span>Каталог</span>
+                    <sup>12</sup>
+                  </span>
+                </label>
+                <label class="filter-modal__input-label">
+                  <input class="filter-modal__input" type="checkbox" id="" />
+                  <span class="filter-modal__input-text">
+                    <span>Корпоративные</span>
+                    <sup>12</sup>
+                  </span>
+                </label>
+                <label class="filter-modal__input-label">
+                  <input class="filter-modal__input" type="checkbox" id="" />
+                  <span class="filter-modal__input-text">
+                    <span>Порталы</span>
+                    <sup>12</sup>
+                  </span>
+                </label>
+                <label class="filter-modal__input-label">
+                  <input class="filter-modal__input" type="checkbox" id="" />
+                  <span class="filter-modal__input-text">
+                    <span>Интернет-магазин</span>
+                    <sup>12</sup>
+                  </span>
+                </label>
+                <label class="filter-modal__input-label">
+                  <input class="filter-modal__input" type="checkbox" id="" />
+                  <span class="filter-modal__input-text">
+                    <span>Приложения</span>
+                    <sup>12</sup>
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <div class="filter-modal__inputs-block">
+              <p class="filter-modal__inputs-title">Отрасль</p>
+
+              <div class="filter-modal__inputs-group">
+                <label class="filter-modal__input-label">
+                  <input class="filter-modal__input" type="checkbox" id="" />
+                  <span class="filter-modal__input-text">
+                    <span>Медицина</span>
+                    <sup>12</sup>
+                  </span>
+                </label>
+                <label class="filter-modal__input-label">
+                  <input class="filter-modal__input" type="checkbox" id="" checked />
+                  <span class="filter-modal__input-text">
+                    <span>Промышленность</span>
+                    <sup>12</sup>
+                  </span>
+                </label>
+                <label class="filter-modal__input-label">
+                  <input class="filter-modal__input" type="checkbox" id="" />
+                  <span class="filter-modal__input-text">
+                    <span>Металлургия</span>
+                    <sup>12</sup>
+                  </span>
+                </label>
+                <label class="filter-modal__input-label">
+                  <input class="filter-modal__input" type="checkbox" id="" />
+                  <span class="filter-modal__input-text">
+                    <span>Авто/мото</span>
+                    <sup>12</sup>
+                  </span>
+                </label>
+                <label class="filter-modal__input-label">
+                  <input class="filter-modal__input" type="checkbox" id="" />
+                  <span class="filter-modal__input-text">
+                    <span>Строительство</span>
+                    <sup>12</sup>
+                  </span>
+                </label>
+                <label class="filter-modal__input-label">
+                  <input class="filter-modal__input" type="checkbox" id="" />
+                  <span class="filter-modal__input-text">
+                    <span>Транспорт и логистика</span>
+                    <sup>12</sup>
+                  </span>
+                </label>
+                <label class="filter-modal__input-label">
+                  <input class="filter-modal__input" type="checkbox" id="" />
+                  <span class="filter-modal__input-text">
+                    <span>Некоммерческие</span>
+                    <sup>12</sup>
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-modal__btn-box">
+            <button type="button" class="filter-modal__clear-btn">Очистить</button>
+            <button type="submit" class="filter-modal__submit-btn btn_arrow_right">
+              <span>Применить фильтр</span>
+
+              <div class="btn_arrow_right_icon">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="13"
+                    viewBox="0 0 19 13"
+                    fill="none"
+                  >
+                    <path
+                      d="M0.99939 5.5L-0.000609719 5.5L-0.00061002 7.5L0.99939 7.5L0.99939 5.5ZM17.9994 6.5L18.6655 7.24587L18.6655 5.75413L17.9994 6.5ZM0.99939 7.5L17.9994 7.5L17.9994 5.5L0.99939 5.5L0.99939 7.5ZM18.6655 5.75413L12.5067 0.254129L11.1746 1.74587L17.3333 7.24587L18.6655 5.75413ZM17.3333 5.75413L11.1746 11.2541L12.5067 12.7459L18.6655 7.24587L17.3333 5.75413Z"
+                      fill="#CA116A"
+                    ></path>
+                  </svg>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="13"
+                    viewBox="0 0 19 13"
+                    fill="none"
+                  >
+                    <path
+                      d="M0.99939 5.5L-0.000609719 5.5L-0.00061002 7.5L0.99939 7.5L0.99939 5.5ZM17.9994 6.5L18.6655 7.24587L18.6655 5.75413L17.9994 6.5ZM0.99939 7.5L17.9994 7.5L17.9994 5.5L0.99939 5.5L0.99939 7.5ZM18.6655 5.75413L12.5067 0.254129L11.1746 1.74587L17.3333 7.24587L18.6655 5.75413ZM17.3333 5.75413L11.1746 11.2541L12.5067 12.7459L18.6655 7.24587L17.3333 5.75413Z"
+                      fill="#CA116A"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer id="footer" class="footer_radius">
+      <div class="body_content">
+        <div class="footer_top d-none d-lg-flex justify-content-between">
+          <div class="footer_menu row">
+            <a class="footer_menu_item" href=""> Главная </a>
+            <a class="footer_menu_item" href=""> Услуги </a>
+            <a class="footer_menu_item" href=""> Контакты </a>
+            <a class="footer_menu_item" href=""> О нас </a>
+            <a class="footer_menu_item" href=""> Статьи </a>
+          </div>
+
+          <div class="footer_top_right">
+            <div class="btn_arrow_right btn_arrow_right_header btn-modal" data-target="#modal-presentation">
+              <span>Обратная связь</span>
+              <div class="btn_arrow_right_icon">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="13"
+                    viewBox="0 0 19 13"
+                    fill="none"
+                  >
+                    <path
+                      d="M0.99939 5.5L-0.000609719 5.5L-0.00061002 7.5L0.99939 7.5L0.99939 5.5ZM17.9994 6.5L18.6655 7.24587L18.6655 5.75413L17.9994 6.5ZM0.99939 7.5L17.9994 7.5L17.9994 5.5L0.99939 5.5L0.99939 7.5ZM18.6655 5.75413L12.5067 0.254129L11.1746 1.74587L17.3333 7.24587L18.6655 5.75413ZM17.3333 5.75413L11.1746 11.2541L12.5067 12.7459L18.6655 7.24587L17.3333 5.75413Z"
+                      fill="#CA116A"
+                    />
+                  </svg>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="13"
+                    viewBox="0 0 19 13"
+                    fill="none"
+                  >
+                    <path
+                      d="M0.99939 5.5L-0.000609719 5.5L-0.00061002 7.5L0.99939 7.5L0.99939 5.5ZM17.9994 6.5L18.6655 7.24587L18.6655 5.75413L17.9994 6.5ZM0.99939 7.5L17.9994 7.5L17.9994 5.5L0.99939 5.5L0.99939 7.5ZM18.6655 5.75413L12.5067 0.254129L11.1746 1.74587L17.3333 7.24587L18.6655 5.75413ZM17.3333 5.75413L11.1746 11.2541L12.5067 12.7459L18.6655 7.24587L17.3333 5.75413Z"
+                      fill="#CA116A"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer_place">Москва ул.Новодмитровская, 2к1</div>
+          </div>
+        </div>
+
+        <div class="footer_center d-none d-lg-block"></div>
+
+        <div class="footer_bottom d-flex justify-content-between align-items-center">
+          <div class="footer_bottom_left d-none d-lg-flex">
+            <div class="footer_soc">
+              <a href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                >
+                  <path
+                    d="M16.0013 2.66699C23.3653 2.66699 29.3347 8.63633 29.3347 16.0003C29.3347 23.3643 23.3653 29.3337 16.0013 29.3337C13.645 29.3375 11.3302 28.7139 9.29465 27.527L2.67332 29.3337L4.47599 22.7097C3.28811 20.6735 2.66405 18.3577 2.66799 16.0003C2.66799 8.63633 8.63732 2.66699 16.0013 2.66699ZM11.4573 9.73366L11.1907 9.74433C11.018 9.75484 10.8493 9.80019 10.6947 9.87766C10.55 9.95957 10.418 10.062 10.3027 10.1817C10.1427 10.3323 10.052 10.463 9.95465 10.5897C9.46148 11.2309 9.19595 12.0181 9.19999 12.827C9.20265 13.4803 9.37332 14.1163 9.63999 14.711C10.1853 15.9137 11.0827 17.187 12.2667 18.367C12.552 18.651 12.832 18.9363 13.1333 19.2017C14.6045 20.4969 16.3577 21.431 18.2533 21.9297L19.0107 22.0457C19.2573 22.059 19.504 22.0403 19.752 22.0283C20.1403 22.0083 20.5195 21.9031 20.8627 21.7203C21.0373 21.6304 21.2077 21.5325 21.3733 21.427C21.3733 21.427 21.4307 21.3897 21.54 21.307C21.72 21.1737 21.8307 21.079 21.98 20.923C22.0907 20.8083 22.1867 20.6737 22.26 20.5203C22.364 20.303 22.468 19.8883 22.5107 19.543C22.5427 19.279 22.5333 19.135 22.5293 19.0457C22.524 18.903 22.4053 18.755 22.276 18.6923L21.5 18.3443C21.5 18.3443 20.34 17.839 19.6307 17.5163C19.5564 17.4839 19.4769 17.4654 19.396 17.4617C19.3048 17.4523 19.2126 17.4626 19.1257 17.4918C19.0387 17.521 18.959 17.5684 18.892 17.631C18.8853 17.6283 18.796 17.7043 17.832 18.8723C17.7767 18.9467 17.7004 19.0029 17.6131 19.0337C17.5257 19.0646 17.4311 19.0688 17.3413 19.0457C17.2545 19.0224 17.1694 18.993 17.0867 18.9577C16.9213 18.8883 16.864 18.8617 16.7507 18.8137C15.9854 18.4797 15.2769 18.0285 14.6507 17.4763C14.4827 17.3297 14.3267 17.1697 14.1667 17.015C13.6421 16.5126 13.185 15.9443 12.8067 15.3243L12.728 15.1977C12.6715 15.1125 12.6258 15.0207 12.592 14.9243C12.5413 14.7283 12.6733 14.571 12.6733 14.571C12.6733 14.571 12.9973 14.2163 13.148 14.0243C13.2947 13.8377 13.4187 13.6563 13.4987 13.527C13.656 13.2737 13.7053 13.0137 13.6227 12.8123C13.2493 11.9003 12.8627 10.9923 12.4653 10.091C12.3867 9.91233 12.1533 9.78433 11.9413 9.75899C11.8693 9.75099 11.7973 9.74299 11.7253 9.73766C11.5463 9.72876 11.3668 9.73054 11.188 9.74299L11.4573 9.73366Z"
+                    fill="#E03C27"
+                  />
+                </svg>
+              </a>
+              <a href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_2001_814)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M29.6666 14.9997C29.6666 23.0999 23.1001 29.6663 14.9999 29.6663C6.89974 29.6663 0.333252 23.0999 0.333252 14.9997C0.333252 6.8995 6.89974 0.333008 14.9999 0.333008C23.1001 0.333008 29.6666 6.8995 29.6666 14.9997ZM15.5255 11.1606C14.099 11.7539 11.2479 12.982 6.97223 14.8448C6.27794 15.1209 5.91423 15.391 5.88112 15.6552C5.82517 16.1015 6.38412 16.2773 7.14527 16.5166C7.24881 16.5492 7.35608 16.5829 7.46606 16.6186C8.21492 16.8621 9.22226 17.1468 9.74594 17.1582C10.221 17.1684 10.7511 16.9726 11.3365 16.5706C15.3313 13.874 17.3935 12.511 17.523 12.4816C17.6143 12.4609 17.7409 12.4348 17.8266 12.511C17.9124 12.5873 17.904 12.7316 17.8949 12.7703C17.8395 13.0064 15.6454 15.0462 14.51 16.1018C14.156 16.4309 13.9049 16.6644 13.8536 16.7177C13.7386 16.8371 13.6214 16.9501 13.5088 17.0586C12.8131 17.7293 12.2914 18.2322 13.5377 19.0535C14.1366 19.4482 14.6159 19.7746 15.094 20.1002C15.6161 20.4558 16.1369 20.8104 16.8108 21.2522C16.9825 21.3647 17.1464 21.4816 17.3061 21.5954C17.9138 22.0286 18.4597 22.4178 19.1342 22.3558C19.5261 22.3197 19.9309 21.9512 20.1365 20.8521C20.6224 18.2546 21.5775 12.6267 21.7982 10.3075C21.8175 10.1043 21.7932 9.8443 21.7737 9.73015C21.7541 9.616 21.7133 9.45336 21.5649 9.33296C21.3892 9.19037 21.1179 9.16031 20.9966 9.16244C20.4449 9.17216 19.5986 9.46645 15.5255 11.1606Z"
+                      fill="#E03C27"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2001_814">
+                      <rect
+                        width="29.3333"
+                        height="29.3333"
+                        fill="white"
+                        transform="translate(0.333252 0.333008)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                >
+                  <path
+                    d="M7.99992 17.333C4.31992 17.333 1.33325 20.3063 1.33325 23.9997C1.33325 27.693 4.31992 30.6663 7.99992 30.6663C11.6799 30.6663 14.6666 27.6797 14.6666 23.9997C14.6666 20.3197 11.6933 17.333 7.99992 17.333ZM5.27992 21.2797H7.99992C8.50658 21.2797 8.90658 21.693 8.90658 22.1863C8.90658 22.6797 8.50658 23.093 7.99992 23.093H5.27992C4.77325 23.093 4.37325 22.6797 4.37325 22.1863C4.37325 21.693 4.77325 21.2797 5.27992 21.2797ZM10.7199 26.7197H5.27992C4.77325 26.7197 4.37325 26.3063 4.37325 25.813C4.37325 25.3197 4.78659 24.9063 5.27992 24.9063H10.7333C11.2399 24.9063 11.6399 25.3197 11.6399 25.813C11.6399 26.3063 11.2266 26.7197 10.7199 26.7197Z"
+                    fill="#E03C27"
+                  />
+                  <path
+                    d="M22.6667 4H9.33341C5.33341 4 2.66675 6 2.66675 10.6667V14.8533C2.66675 15.8267 3.66675 16.44 4.56008 16.0533C6.02675 15.4133 7.69341 15.1733 9.44008 15.4533C12.9334 16.0267 15.7867 18.7867 16.4934 22.2533C16.6934 23.2667 16.7201 24.2533 16.5867 25.2C16.4801 25.9867 17.1201 26.68 17.9067 26.68H22.6667C26.6667 26.68 29.3334 24.68 29.3334 20.0133V10.6667C29.3334 6 26.6667 4 22.6667 4ZM23.2934 11.4533L19.1201 14.7867C18.2401 15.4933 17.1201 15.84 16.0001 15.84C14.8801 15.84 13.7467 15.4933 12.8801 14.7867L8.70675 11.4533C8.28008 11.1067 8.21341 10.4667 8.54675 10.04C8.89341 9.61333 9.52008 9.53333 9.94675 9.88L14.1201 13.2133C15.1334 14.0267 16.8534 14.0267 17.8667 13.2133L22.0401 9.88C22.4667 9.53333 23.1067 9.6 23.4401 10.04C23.7867 10.4667 23.7201 11.1067 23.2934 11.4533Z"
+                    fill="#E03C27"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <div class="footer_mail">
+              <a href="">hi@goldfishmedia.group</a>
+            </div>
+          </div>
+
+          <div class="footer_info">
+            <span>@GMG 2024</span>
+            <span>Все права защищены</span>
+          </div>
+        </div>
+
+        <div class="footer_marquee marquee1 d-lg-none d-block">DIGITAL СЕРДЦЕ ПРОЕКТА</div>
+      </div>
+    </footer>
+
+    <div class="success_form">
+      <div class="success_form_flex">
+        <div class="success_form_image">
+          <svg width="34" height="36" viewBox="0 0 34 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="34" height="35" transform="translate(0 0.188477)" fill="white" />
+            <rect width="16" height="11" transform="translate(9 12.1885)" fill="white" />
+            <path
+              d="M25.7071 12.8956L26.4142 12.1885L25 10.7743L24.2929 11.4814L25.7071 12.8956ZM14 23.1885L13.2929 23.8956L14 24.6027L14.7071 23.8956L14 23.1885ZM24.2929 11.4814L13.2929 22.4814L14.7071 23.8956L25.7071 12.8956L24.2929 11.4814ZM14.7071 22.4814L9.70711 17.4814L8.29289 18.8956L13.2929 23.8956L14.7071 22.4814Z"
+              fill="#CA116A"
+            />
+          </svg>
+        </div>
+        <div class="success_form_text">
+          <h4>Ваша заявка успешно отправлена</h4>
+          <p>Спасибо, свяжемся с вами в течение 24 часов</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-feedback">
+      <div class="modal-content-right">
+        <div class="modal-content-close close" data-dismiss="#modal-feedback">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+            <path d="M25 1L1 25M1 1L25 25" stroke="#E8E8E8" stroke-width="2" />
+          </svg>
+        </div>
+
+        <div class="modal-title">
+          <h3>Обратная связь</h3>
+        </div>
+
+        <form class="modal-form form_send" id="feedback_modal" data-name="Обратная связь">
+          <div class="feedback_form_inputs">
+            <div
+              class="feedback_form_input feedback_form_input_req feedback_form_input_important input_parent"
+            >
+              <input type="text" class="feedback_input input_ input_req" id="name" required />
+              <label>Имя и Фамилия</label>
+              <span> Не заполнено данное поле</span>
+            </div>
+          </div>
+
+          <div class="feedback_form_inputs">
+            <div
+              class="feedback_form_input feedback_form_input_req feedback_form_input_important input_parent"
+            >
+              <input type="text" class="feedback_input input_ input_mail input_req" id="mail" required />
+              <label>Корпоративный E-mail</label>
+              <span> Не заполнено данное поле</span>
+            </div>
+          </div>
+
+          <div class="feedback_form_inputs">
+            <div
+              class="feedback_form_input feedback_form_input_req input_parent feedback_form_input_important"
+            >
+              <input type="text" class="feedback_input input_ input_req" id="name_company" required />
+              <label>Название компании</label>
+              <span> Не заполнено данное поле</span>
+            </div>
+          </div>
+
+          <div class="feedback_form_inputs">
+            <div
+              class="feedback_form_input feedback_form_input_req input_parent feedback_form_input_important"
+            >
+              <input type="text" class="feedback_input input_phone input_ input_req" id="phone" required />
+              <label>Телефон</label>
+              <span> Не заполнено данное поле</span>
+            </div>
+          </div>
+          <div class="modal-btn">
+            <button
+              type="submit"
+              class="btn_arrow_right feedback_button feedback_send_ajax"
+              data-feedback="#feedback_modal"
+            >
+              <span>Отправить заявку</span>
+              <div class="btn_arrow_right_icon">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="13"
+                    viewBox="0 0 19 13"
+                    fill="none"
+                  >
+                    <path
+                      d="M0.99939 5.5L-0.000609719 5.5L-0.00061002 7.5L0.99939 7.5L0.99939 5.5ZM17.9994 6.5L18.6655 7.24587L18.6655 5.75413L17.9994 6.5ZM0.99939 7.5L17.9994 7.5L17.9994 5.5L0.99939 5.5L0.99939 7.5ZM18.6655 5.75413L12.5067 0.254129L11.1746 1.74587L17.3333 7.24587L18.6655 5.75413ZM17.3333 5.75413L11.1746 11.2541L12.5067 12.7459L18.6655 7.24587L17.3333 5.75413Z"
+                      fill="#CA116A"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="13"
+                    viewBox="0 0 19 13"
+                    fill="none"
+                  >
+                    <path
+                      d="M0.99939 5.5L-0.000609719 5.5L-0.00061002 7.5L0.99939 7.5L0.99939 5.5ZM17.9994 6.5L18.6655 7.24587L18.6655 5.75413L17.9994 6.5ZM0.99939 7.5L17.9994 7.5L17.9994 5.5L0.99939 5.5L0.99939 7.5ZM18.6655 5.75413L12.5067 0.254129L11.1746 1.74587L17.3333 7.24587L18.6655 5.75413ZM17.3333 5.75413L11.1746 11.2541L12.5067 12.7459L18.6655 7.24587L17.3333 5.75413Z"
+                      fill="#CA116A"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+
+          <div class="modal-form-disclaimer">
+            Нажимая “Оставить заявку” вы соглашаетесь с политикой обработки персональных данных
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-presentation">
+      <div class="modal-content-right">
+        <div class="modal-content-close close" data-dismiss="#modal-presentation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+            <path d="M25 1L1 25M1 1L25 25" stroke="#E8E8E8" stroke-width="2" />
+          </svg>
+        </div>
+
+        <div class="modal-title">
+          <h3>Запросить презентацию</h3>
+        </div>
+
+        <form class="modal-form form_send" id="feedback_modal_presentation" data-name="Запросить презентацию">
+          <div class="feedback_form_inputs">
+            <div
+              class="feedback_form_input feedback_form_input_req feedback_form_input_important input_parent"
+            >
+              <input type="text" class="feedback_input input_ input_req" id="name" required />
+              <label>Имя и Фамилия</label>
+              <span> Не заполнено данное поле</span>
+            </div>
+          </div>
+
+          <div class="feedback_form_inputs">
+            <div
+              class="feedback_form_input feedback_form_input_req feedback_form_input_important input_parent"
+            >
+              <input type="text" class="feedback_input input_ input_mail input_req" id="mail" required />
+              <label>Корпоративный E-mail</label>
+              <span> Не заполнено данное поле</span>
+            </div>
+          </div>
+
+          <div class="feedback_form_inputs">
+            <div
+              class="feedback_form_input feedback_form_input_req input_parent feedback_form_input_important"
+            >
+              <input type="text" class="feedback_input input_ input_req" id="name_company" required />
+              <label>Название компании</label>
+              <span> Не заполнено данное поле</span>
+            </div>
+          </div>
+
+          <div class="feedback_form_inputs">
+            <div
+              class="feedback_form_input feedback_form_input_req input_parent feedback_form_input_important"
+            >
+              <input type="text" class="feedback_input input_phone input_ input_req" id="phone" required />
+              <label>Телефон</label>
+              <span> Не заполнено данное поле</span>
+            </div>
+          </div>
+          <div class="modal-btn">
+            <button
+              type="submit"
+              class="btn_arrow_right feedback_button feedback_send_ajax"
+              data-feedback="#feedback_modal_presentation"
+            >
+              <span>Отправить заявку</span>
+              <div class="btn_arrow_right_icon">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="13"
+                    viewBox="0 0 19 13"
+                    fill="none"
+                  >
+                    <path
+                      d="M0.99939 5.5L-0.000609719 5.5L-0.00061002 7.5L0.99939 7.5L0.99939 5.5ZM17.9994 6.5L18.6655 7.24587L18.6655 5.75413L17.9994 6.5ZM0.99939 7.5L17.9994 7.5L17.9994 5.5L0.99939 5.5L0.99939 7.5ZM18.6655 5.75413L12.5067 0.254129L11.1746 1.74587L17.3333 7.24587L18.6655 5.75413ZM17.3333 5.75413L11.1746 11.2541L12.5067 12.7459L18.6655 7.24587L17.3333 5.75413Z"
+                      fill="#CA116A"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="13"
+                    viewBox="0 0 19 13"
+                    fill="none"
+                  >
+                    <path
+                      d="M0.99939 5.5L-0.000609719 5.5L-0.00061002 7.5L0.99939 7.5L0.99939 5.5ZM17.9994 6.5L18.6655 7.24587L18.6655 5.75413L17.9994 6.5ZM0.99939 7.5L17.9994 7.5L17.9994 5.5L0.99939 5.5L0.99939 7.5ZM18.6655 5.75413L12.5067 0.254129L11.1746 1.74587L17.3333 7.24587L18.6655 5.75413ZM17.3333 5.75413L11.1746 11.2541L12.5067 12.7459L18.6655 7.24587L17.3333 5.75413Z"
+                      fill="#CA116A"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+
+          <div class="modal-form-disclaimer">
+            Нажимая “запросить презентацию” вы соглашаетесь с политикой обработки персональных данных
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-success-feedback">
+      <div class="modal-content-right">
+        <div class="modal-content-close close" data-dismiss="#modal-success-feedback">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+            <path d="M25 1L1 25M1 1L25 25" stroke="#E8E8E8" stroke-width="2" />
+          </svg>
+        </div>
+
+        <div class="modal__content-box">
+          <div class="modal-title">
+            <h3>
+              Ваша заявка <br />
+              на бриф отправлена!
+            </h3>
+          </div>
+
+          <div class="modal__info-box">
+            <div class="modal__info-disclaimer">
+              Мы свяжемся свами для отправки брифа <br />
+              в течение 24 часов, спасибо!
+            </div>
+
+            <div class="modal-btn">
+              <div class="btn_arrow_right feedback_send_ajax close" data-dismiss="#modal-success-feedback">
+                <span>На главную</span>
+                <div class="btn_arrow_right_icon">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="19"
+                      height="13"
+                      viewBox="0 0 19 13"
+                      fill="none"
+                    >
+                      <path
+                        d="M0.99939 5.5L-0.000609719 5.5L-0.00061002 7.5L0.99939 7.5L0.99939 5.5ZM17.9994 6.5L18.6655 7.24587L18.6655 5.75413L17.9994 6.5ZM0.99939 7.5L17.9994 7.5L17.9994 5.5L0.99939 5.5L0.99939 7.5ZM18.6655 5.75413L12.5067 0.254129L11.1746 1.74587L17.3333 7.24587L18.6655 5.75413ZM17.3333 5.75413L11.1746 11.2541L12.5067 12.7459L18.6655 7.24587L17.3333 5.75413Z"
+                        fill="#CA116A"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="19"
+                      height="13"
+                      viewBox="0 0 19 13"
+                      fill="none"
+                    >
+                      <path
+                        d="M0.99939 5.5L-0.000609719 5.5L-0.00061002 7.5L0.99939 7.5L0.99939 5.5ZM17.9994 6.5L18.6655 7.24587L18.6655 5.75413L17.9994 6.5ZM0.99939 7.5L17.9994 7.5L17.9994 5.5L0.99939 5.5L0.99939 7.5ZM18.6655 5.75413L12.5067 0.254129L11.1746 1.74587L17.3333 7.24587L18.6655 5.75413ZM17.3333 5.75413L11.1746 11.2541L12.5067 12.7459L18.6655 7.24587L17.3333 5.75413Z"
+                        fill="#CA116A"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-success-presentation">
+      <div class="modal-content-right">
+        <div class="modal-content-close close" data-dismiss="#modal-success-presentation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+            <path d="M25 1L1 25M1 1L25 25" stroke="#E8E8E8" stroke-width="2" />
+          </svg>
+        </div>
+
+        <div class="modal__content-box">
+          <div class="modal-title">
+            <h3>
+              Ваша заявка <br />
+              на презентацию отправлена!
+            </h3>
+          </div>
+
+          <div class="modal__info-box">
+            <div class="modal__info-disclaimer">
+              Мы свяжемся свами для отправки презентации <br />
+              в течение 24 часов, спасибо!
+            </div>
+
+            <div class="modal-btn">
+              <div
+                class="btn_arrow_right feedback_send_ajax close"
+                data-dismiss="#modal-success-presentation"
+              >
+                <span>На главную</span>
+                <div class="btn_arrow_right_icon">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="19"
+                      height="13"
+                      viewBox="0 0 19 13"
+                      fill="none"
+                    >
+                      <path
+                        d="M0.99939 5.5L-0.000609719 5.5L-0.00061002 7.5L0.99939 7.5L0.99939 5.5ZM17.9994 6.5L18.6655 7.24587L18.6655 5.75413L17.9994 6.5ZM0.99939 7.5L17.9994 7.5L17.9994 5.5L0.99939 5.5L0.99939 7.5ZM18.6655 5.75413L12.5067 0.254129L11.1746 1.74587L17.3333 7.24587L18.6655 5.75413ZM17.3333 5.75413L11.1746 11.2541L12.5067 12.7459L18.6655 7.24587L17.3333 5.75413Z"
+                        fill="#CA116A"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="19"
+                      height="13"
+                      viewBox="0 0 19 13"
+                      fill="none"
+                    >
+                      <path
+                        d="M0.99939 5.5L-0.000609719 5.5L-0.00061002 7.5L0.99939 7.5L0.99939 5.5ZM17.9994 6.5L18.6655 7.24587L18.6655 5.75413L17.9994 6.5ZM0.99939 7.5L17.9994 7.5L17.9994 5.5L0.99939 5.5L0.99939 7.5ZM18.6655 5.75413L12.5067 0.254129L11.1746 1.74587L17.3333 7.24587L18.6655 5.75413ZM17.3333 5.75413L11.1746 11.2541L12.5067 12.7459L18.6655 7.24587L17.3333 5.75413Z"
+                        fill="#CA116A"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-map">
+      <div class="modal-map-close close" data-dismiss="#modal-map">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+          <path d="M25 1L1 25M1 1L25 25" stroke="#E8E8E8" stroke-width="2" />
+        </svg>
+      </div>
+
+      <div class="modal-content-map">
+        <!-- <video
+          width="100%"
+          height="100%"
+          preload="auto"
+          autoplay="autoplay"
+          muted
+          loop
+          playsinline
+        >
+          <source src="images/modal-map.mp4" type="video/mp4" />
+        </video> -->
+        <div class="modal-content-map__img-box">
+          <div class="modal-content-map__map-box"><img src="images/modal-map.webp"" alt=""></div>
+          <div class="modal-content-map__house-box"><img src="images/map-houses.webp"" alt=""></div>
+
+          <div class="modal-content-map__subway-box modal-content-map__point">
+            <div class="modal-content-map__circle-box"></div>
+            <div class="modal-content-map__subway-content-box modal-content-map__content-box">
+              <div class="modal-content-map__subway-img">
+                <img src="images/subway.png" alt="" />
+              </div>
+              <div class="modal-content-map__text-box">
+                <p>М. Дмитровская</p>
+                <span> (4-й выход)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-content-map__bakery-box modal-content-map__point">
+            <div class="modal-content-map__circle-box"></div>
+            <div class="modal-content-map__bakery-content-box modal-content-map__content-box">
+              <div class="modal-content-map__baloon-img-box">
+                <div class="modal-content-map__baloon-img">
+                  <img src="images/bakery.png" alt="" />
+                </div>
+              </div>
+
+              <div class="modal-content-map__text-box">Хлебзавод</div>
+            </div>
+          </div>
+
+          <div class="modal-content-map__flacon-box modal-content-map__point">
+            <div class="modal-content-map__circle-box"></div>
+            <div class="modal-content-map__flacon-content-box modal-content-map__content-box">
+              <div class="modal-content-map__baloon-img-box">
+                <div class="modal-content-map__baloon-img">
+                  <img src="images/flacon.png" alt="" />
+                </div>
+              </div>
+
+              <div class="modal-content-map__text-box">Дизайн-завод Флакон</div>
+            </div>
+          </div>
+
+          <div class="modal-content-map__parking-box modal-content-map__point">
+            <div class="modal-content-map__circle-box"></div>
+            <div class="modal-content-map__parking-content-box modal-content-map__content-box">
+              <div class="modal-content-map__parking-img">
+                <img src="images/parking.png" alt="" />
+              </div>
+              <div class="modal-content-map__text-box">Многоуровневая <br />парковка</div>
+            </div>
+          </div>
+
+          <div class="modal-content-map__metro-box modal-content-map__point">
+            <div class="modal-content-map__metro-content-box modal-content-map__content-box">
+              <div class="modal-content-map__metro-img">
+                <img src="images/metro.png" alt="" />
+              </div>
+              <div class="modal-content-map__text-box">Metro CC</div>
+            </div>
+          </div>
+
+          <div class="modal-content-map__company-box modal-content-map__point">
+            <div class="modal-content-map__company-circle-box"></div>
+
+            <div class="modal-content-map__company-content-box">
+              <div class="modal-content-map__company-svg-box">
+                <svg
+                  width="44"
+                  height="44"
+                  viewBox="0 0 44 44"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="22" cy="22" r="22" fill="#FFCD00" />
+                  <path
+                    d="M30.6201 18.45C29.5701 13.83 25.5401 11.75 22.0001 11.75C22.0001 11.75 22.0001 11.75 21.9901 11.75C18.4601 11.75 14.4201 13.82 13.3701 18.44C12.2001 23.6 15.3601 27.97 18.2201 30.72C19.2801 31.74 20.6401 32.25 22.0001 32.25C23.3601 32.25 24.7201 31.74 25.7701 30.72C28.6301 27.97 31.7901 23.61 30.6201 18.45ZM22.0001 23.46C20.2601 23.46 18.8501 22.05 18.8501 20.31C18.8501 18.57 20.2601 17.16 22.0001 17.16C23.7401 17.16 25.1501 18.57 25.1501 20.31C25.1501 22.05 23.7401 23.46 22.0001 23.46Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div class="modal-content-map__company-info-box">
+                <p>ул. Новодмитровская 2к1,</p>
+                <span>БЦ «Савеловский Сити», 15й этаж, офис 1504</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-content-map__trafficlight-box">
+            <span class="modal-content-map__trafficlight-red modal-content-map__trafficlight-circle"></span>
+            <span class="modal-content-map__trafficlight-green modal-content-map__trafficlight-circle"></span>
+          </div>
+
+          <div class="modal-content-map__car-top-box modal-content-map__item-box">
+            <div class="modal-content-map__item-svg-box">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                version="1.1"
+                x="0px"
+                y="0px"
+                viewBox="0 0 100 100"
+                enable-background="new 0 0 100 100"
+                xml:space="preserve"
+                fill="white"
+              >
+                <path
+                  d="M72,40c0,0-14-13-22-13H32C17,27,1,40,1,44v18.001l6.507,1.858C7.583,57.021,13.145,51.5,20,51.5  c6.903,0,12.5,5.597,12.5,12.5h35c0-6.903,5.597-12.5,12.5-12.5c6.855,0,12.416,5.521,12.493,12.359L99,62V51C99,47,89,42,72,40z   M37,40.931l-24.449-0.843C17.573,36.613,25.016,33,32,33h5V40.931z M43,41.138V33h7c2.853,0,9.49,4.249,15.064,8.899L43,41.138z"
+                />
+                <circle cx="20" cy="64" r="8.5" />
+                <circle cx="80" cy="64" r="8.5" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-content-map__train-box modal-content-map__item-box">
+            <div class="modal-content-map__item-svg-box">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                data-name="Layer 1"
+                viewBox="0 0 100 100"
+                x="0px"
+                y="0px"
+                fill="#fff"
+              >
+                <path
+                  d="M72.94,12.15c-1.79-.57-3.54-1.07-5.27-1.51V5.07a2.85,2.85,0,0,0-2.36-2.82,94.18,94.18,0,0,0-30.62,0,2.85,2.85,0,0,0-2.37,2.82v5.57c-1.73.44-3.48.94-5.27,1.51-5.1,1.63-8.53,6.4-8.53,12.7V70.36c0-.65,0-.35,0-.06A11.88,11.88,0,0,0,28.3,80.94l-7.2,11.67a4.36,4.36,0,1,0,7.72,4.05l2.42-3.59H68.77l2.42,3.59a4.36,4.36,0,0,0,7.72-4.05L71.7,80.94A11.88,11.88,0,0,0,81.44,70.3c0-.29,0-.59,0,.06V24.85C81.47,18.55,78,13.78,72.94,12.15Zm-31.65-.08a1.3,1.3,0,0,1,1.17-1.24,51.86,51.86,0,0,1,15.09,0,1.3,1.3,0,0,1,1.17,1.24v5.1a1.33,1.33,0,0,1-1.4,1.25H42.69a1.33,1.33,0,0,1-1.4-1.25ZM29.08,63.3a6,6,0,1,1,6,6A6,6,0,0,1,29.08,63.3ZM34.9,86.1,38,81.17H62L65.1,86.1Zm30-16.83a6,6,0,1,1,6-6A6,6,0,0,1,64.94,69.28Zm6.44-38.12L67.73,46.66a2.56,2.56,0,0,1-2.5,2H34.78a2.56,2.56,0,0,1-2.5-2L28.62,31.16a2.33,2.33,0,0,1,2.28-2.84H69.1A2.33,2.33,0,0,1,71.38,31.16Z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-content-map__car-bottom-box modal-content-map__item-box">
+            <div class="modal-content-map__item-svg-box">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                version="1.1"
+                x="0px"
+                y="0px"
+                viewBox="0 0 100 100"
+                enable-background="new 0 0 100 100"
+                xml:space="preserve"
+                fill="white"
+              >
+                <path
+                  d="M72,40c0,0-14-13-22-13H32C17,27,1,40,1,44v18.001l6.507,1.858C7.583,57.021,13.145,51.5,20,51.5  c6.903,0,12.5,5.597,12.5,12.5h35c0-6.903,5.597-12.5,12.5-12.5c6.855,0,12.416,5.521,12.493,12.359L99,62V51C99,47,89,42,72,40z   M37,40.931l-24.449-0.843C17.573,36.613,25.016,33,32,33h5V40.931z M43,41.138V33h7c2.853,0,9.49,4.249,15.064,8.899L43,41.138z"
+                />
+                <circle cx="20" cy="64" r="8.5" />
+                <circle cx="80" cy="64" r="8.5" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-content-map__car-left-box modal-content-map__item-box">
+            <div class="modal-content-map__item-svg-box">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                version="1.1"
+                x="0px"
+                y="0px"
+                viewBox="0 0 100 100"
+                enable-background="new 0 0 100 100"
+                xml:space="preserve"
+                fill="white"
+              >
+                <path
+                  d="M72,40c0,0-14-13-22-13H32C17,27,1,40,1,44v18.001l6.507,1.858C7.583,57.021,13.145,51.5,20,51.5  c6.903,0,12.5,5.597,12.5,12.5h35c0-6.903,5.597-12.5,12.5-12.5c6.855,0,12.416,5.521,12.493,12.359L99,62V51C99,47,89,42,72,40z   M37,40.931l-24.449-0.843C17.573,36.613,25.016,33,32,33h5V40.931z M43,41.138V33h7c2.853,0,9.49,4.249,15.064,8.899L43,41.138z"
+                />
+                <circle cx="20" cy="64" r="8.5" />
+                <circle cx="80" cy="64" r="8.5" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-content-map__human-box modal-content-map__item-box">
+            <div class="modal-content-map__item-svg-box">
+              <svg
+                id="Layer_1"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                viewBox="0 0 3500 3500"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #000;
+                    }
+
+                    .cls-1,
+                    .cls-2 {
+                      stroke-width: 0px;
+                    }
+
+                    .cls-2 {
+                      display: none;
+                      fill: #fff;
+                    }
+                  </style>
+                </defs>
+                <rect class="cls-2" width="3500" height="3500" />
+                <g>
+                  <path
+                    class="cls-1"
+                    d="M1883.24,1497c0,103.06.78,206.13-.56,309.18-.32,25.17,7.07,43.9,23.37,62.53,75.9,86.82,149.95,175.27,226.18,261.8,49.28,55.94,84.42,121.02,123.8,183.33,78.54,124.28,155.74,249.4,233.45,374.2,7.53,12.09,15.17,24.15,22.02,36.63,30.26,55.12,17.01,120.02-31.68,156.55-52.55,39.42-118.47,34.87-164.24-11.59-22.99-23.33-38.49-52.04-55.27-79.67-95.19-156.72-195.66-310.11-292.97-465.48-5.84-9.32-12.77-17.49-21.02-25.12-129.39-119.66-258.6-239.51-387.47-359.72-41.54-38.74-60.54-86.68-60.12-144.16,1.06-143.24-.03-286.5.24-429.74.03-15.9-1.53-21.17-18.11-11.35-56.83,33.67-114.27,66.32-171.72,98.94-10.99,6.24-16.65,14.88-20.17,26.76-31.03,104.83-62.48,209.54-93.85,314.27-8.85,29.55-20.55,57.48-46.72,76.39-41.45,29.95-92.32,31.21-132.71,3.5-42.14-28.9-59.56-76.02-43.58-128.53,38.08-125.14,77.52-249.87,116.86-374.62,13.42-42.57,40.7-74.81,78.63-97.84,141.19-85.71,283.35-169.8,427.8-249.89,75.57-41.9,181.68-28.09,236.65,28.7,34.4,35.54,51.97,77.91,51.71,127.98-.54,105.65-.16,211.31-.16,316.96h-.34Z"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M1058.65,2908.65c-83.82.89-144.43-88.16-114.04-167.27,8-20.83,21.33-38.43,32.92-57.12,137.57-221.87,270.91-446.29,405.75-669.81,10.04-16.64,20.82-32.84,30.44-49.7,4.95-8.68,8.15-11.2,16.8-3.13,57.34,53.47,115.02,106.59,173.01,159.36,9.63,8.76,11.07,14.71,3.57,26.68-144.31,230.44-288.05,461.24-431.8,692.03-27.38,43.95-68.37,68.45-116.65,68.97Z"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M1738.88,935.8c-137.38-.4-247.91-113.96-247.39-254.02.52-140.99,112.48-251.47,258.86-249.66,147.55,1.82,245.85,134.07,244.6,251.34-1.3,121.84-95.87,254.24-256.07,252.34Z"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M1969.74,1173.54c31.89,42.91,60.46,81.78,89.49,120.32,39.73,52.75,79.96,105.13,119.6,157.96,6.63,8.83,14.57,13.78,25.02,16.67,88.47,24.52,176.91,49.18,265.25,74.17,59.42,16.81,98.62,68.23,93.86,122.17-6.09,69.06-71.18,117.27-140.65,100.26-62.18-15.23-123.15-35.41-184.68-53.33-52.22-15.21-104.41-30.5-156.71-45.42-73.23-20.9-111.06-70.41-111.15-146.64-.13-113.37-.03-226.73-.03-346.15Z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="modal-content-map__link modal-content-map__link--mobile">
+          <div class="modal-content-map__link-svg-wrapper">
+            <div class="modal-content-map__link-svg-box">
+              <div class="modal-content-map__link-svg-inner-box">
+                <svg
+                  width="28"
+                  height="25"
+                  viewBox="0 0 28 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1101_5321)">
+                    <path
+                      d="M2.72333 22.5046C2.70235 22.5046 2.6814 22.503 2.66067 22.4998C2.5739 22.4867 2.49332 22.447 2.42999 22.3862C2.36666 22.3255 2.32369 22.2466 2.30699 22.1605C1.47482 17.8589 2.44543 13.8787 5.03592 10.9535C7.75928 7.87947 11.98 6.25959 16.6704 6.4718V2.92031C16.6703 2.83631 16.6952 2.75418 16.7418 2.68433C16.7885 2.61447 16.8548 2.56003 16.9324 2.52789C17.01 2.49576 17.0954 2.48737 17.1778 2.5038C17.2602 2.52023 17.3358 2.56073 17.3952 2.62018L25.3864 10.6112C25.466 10.6908 25.5106 10.7988 25.5106 10.9114C25.5106 11.024 25.466 11.132 25.3864 11.2117L17.3952 19.2027C17.3358 19.2621 17.2602 19.3026 17.1778 19.319C17.0954 19.3355 17.01 19.3271 16.9324 19.295C16.8548 19.2628 16.7885 19.2084 16.7418 19.1385C16.6952 19.0687 16.6703 18.9865 16.6704 18.9025V15.4852C10.8176 14.166 5.43583 17.863 3.09798 22.279C3.06189 22.347 3.00795 22.404 2.94195 22.4437C2.87595 22.4835 2.80037 22.5045 2.72333 22.5046Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1101_5321">
+                      <rect width="26.5263" height="24" fill="white" transform="translate(0.5 0.5)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="share-modal">
+        <div class="share-modal__inner">
+          <p class="share-modal__title">Поделиться</p>
+          <div class="share-modal__close-wrapper">
+            <div class="share-modal__close">
+              <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M24.7852 1.66211L0.785156 25.6621M0.785156 1.66211L24.7852 25.6621"
+                  stroke="#A9A9A9"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div class="share-modal__btn-box">
+            <button class="share-modal__btn share-modal__btn--copy">
+              <div class="share-modal__btn-img-wrapper">
+                <div class="share-modal__btn-img-box">
+                  <svg
+                    width="30"
+                    height="31"
+                    viewBox="0 0 30 31"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.8637 11.9806C18.9115 13.0214 19.4887 14.412 19.4887 15.8913C19.4887 17.3706 18.9106 18.7551 17.8637 19.802L13.3368 24.3297C12.2891 25.3766 10.9055 25.9547 9.42618 25.9547C7.94685 25.9547 6.5564 25.3766 5.51552 24.3297C4.9886 23.8089 4.58236 23.1995 4.30892 22.5398C4.03634 21.8792 3.88965 21.1561 3.88965 20.4191C3.88965 18.946 4.46778 17.5562 5.51465 16.5085L10.0415 11.9816C10.0988 11.9243 10.1492 11.8739 10.2065 11.8288C9.99727 12.4573 9.88876 13.1179 9.88876 13.7906C9.88876 14.597 10.0415 15.3844 10.3332 16.1084L7.72387 18.7177C7.2664 19.1752 7.019 19.7776 7.019 20.4191C7.019 21.0667 7.2664 21.67 7.72387 22.1205C8.17438 22.5779 8.78376 22.8314 9.42525 22.8314C10.0667 22.8314 10.6692 22.5771 11.1266 22.1205L15.6535 17.5936C16.111 17.1361 16.3644 16.5337 16.3644 15.8922C16.3644 15.2446 16.1101 14.6413 15.6535 14.1908C15.2855 13.8167 14.8158 13.5814 14.3011 13.5111C14.3584 13.1431 14.5363 12.8063 14.8028 12.5398L16.4026 10.94C16.9365 11.1943 17.4314 11.5431 17.8637 11.9806ZM24.4913 5.34684C22.3394 3.19493 18.8282 3.19493 16.6762 5.34684L12.1433 9.87973C11.1025 10.9275 10.5244 12.3111 10.5244 13.7904C10.5244 15.2697 11.1025 16.6602 12.1433 17.7011C12.5747 18.1325 13.0704 18.4884 13.6034 18.7488L15.2093 17.1429C15.4758 16.8764 15.6476 16.5335 15.7041 16.1715C15.1962 16.1021 14.7266 15.8668 14.3516 15.4918C13.4124 14.5526 13.4124 13.0283 14.3516 12.0892L18.8845 7.55629C19.3542 7.08667 19.9705 6.85142 20.5859 6.85142C21.2014 6.85142 21.8177 7.08667 22.2873 7.55629C23.2204 8.49553 23.2204 10.0258 22.2873 10.9652L19.678 13.5745C19.9696 14.2985 20.1224 15.0858 20.1224 15.8914C20.1224 16.5641 20.0148 17.2308 19.7986 17.8593C19.8559 17.8081 19.9132 17.7577 19.9636 17.7004L24.4904 13.1735C26.6502 11.0164 26.6502 7.5051 24.4913 5.3471L24.4913 5.34684Z"
+                      fill="#101212"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <p class="share-modal__btn-text">Скопировать ссылку</p>
+            </button>
+            <a
+              href="https://t.me/share/url?url=https://new.goldfishmedia.group"
+              target="_blank"
+              class="share-modal__btn"
+            >
+              <div class="share-modal__btn-img-wrapper">
+                <div class="share-modal__btn-img-box">
+                  <svg
+                    width="30"
+                    height="31"
+                    viewBox="0 0 30 31"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1101_5920)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M28.75 15.3374C28.75 22.9313 22.5939 29.0874 15 29.0874C7.40609 29.0874 1.25 22.9313 1.25 15.3374C1.25 7.74349 7.40609 1.5874 15 1.5874C22.5939 1.5874 28.75 7.74349 28.75 15.3374ZM15.4927 11.7383C14.1553 12.2945 11.4824 13.4459 7.47404 15.1923C6.82314 15.4511 6.48217 15.7043 6.45113 15.9519C6.39867 16.3704 6.92269 16.5351 7.63627 16.7595C7.73333 16.79 7.83391 16.8217 7.93701 16.8552C8.63906 17.0834 9.58345 17.3504 10.0744 17.361C10.5197 17.3706 11.0168 17.187 11.5655 16.8102C15.3107 14.2821 17.244 13.0043 17.3654 12.9767C17.451 12.9573 17.5696 12.9328 17.65 13.0043C17.7304 13.0758 17.7225 13.2111 17.714 13.2474C17.6621 13.4687 15.6051 15.3811 14.5407 16.3707C14.2088 16.6792 13.9734 16.898 13.9253 16.948C13.8175 17.06 13.7076 17.1659 13.6021 17.2677C12.9498 17.8964 12.4607 18.3679 13.6291 19.1379C14.1906 19.5079 14.6399 19.8139 15.0882 20.1191C15.5777 20.4525 16.066 20.785 16.6977 21.1991C16.8586 21.3046 17.0123 21.4142 17.1621 21.5209C17.7318 21.9271 18.2436 22.2919 18.8759 22.2338C19.2433 22.1999 19.6228 21.8545 19.8156 20.8241C20.2711 18.3889 21.1664 13.1127 21.3734 10.9385C21.3915 10.748 21.3687 10.5042 21.3504 10.3972C21.3321 10.2902 21.2938 10.1377 21.1547 10.0249C20.99 9.89118 20.7356 9.863 20.6219 9.865C20.1047 9.87411 19.3113 10.15 15.4927 11.7383Z"
+                        fill="#101212"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1101_5920">
+                        <rect width="27.5" height="27.5" fill="white" transform="translate(1.25 1.5874)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+              <p class="share-modal__btn-text">Telegram</p>
+            </a>
+
+            <a
+              href="https://api.whatsapp.com/send?text=https://new.goldfishmedia.group"
+              target="_blank"
+              class="share-modal__btn"
+            >
+              <div class="share-modal__btn-img-wrapper">
+                <div class="share-modal__btn-img-box">
+                  <svg
+                    width="30"
+                    height="31"
+                    viewBox="0 0 30 31"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1101_5924)">
+                      <path
+                        d="M15.0015 2.8374C21.9052 2.8374 27.5015 8.43365 27.5015 15.3374C27.5015 22.2412 21.9052 27.8374 15.0015 27.8374C12.7925 27.841 10.6223 27.2564 8.71398 26.1437L2.50648 27.8374L4.19648 21.6274C3.08285 19.7185 2.49779 17.5474 2.50148 15.3374C2.50148 8.43365 8.09773 2.8374 15.0015 2.8374ZM10.7415 9.4624L10.4915 9.4724C10.3296 9.48226 10.1715 9.52478 10.0265 9.5974C9.89088 9.67419 9.7671 9.77018 9.65898 9.8824C9.50898 10.0237 9.42398 10.1462 9.33273 10.2649C8.87038 10.866 8.62145 11.604 8.62523 12.3624C8.62773 12.9749 8.78773 13.5712 9.03773 14.1287C9.54898 15.2562 10.3902 16.4499 11.5002 17.5562C11.7677 17.8224 12.0302 18.0899 12.3127 18.3387C13.692 19.553 15.3355 20.4287 17.1127 20.8962L17.8227 21.0049C18.054 21.0174 18.2852 20.9999 18.5177 20.9887C18.8818 20.9699 19.2372 20.8713 19.559 20.6999C19.7227 20.6156 19.8824 20.5238 20.0377 20.4249C20.0377 20.4249 20.0915 20.3899 20.194 20.3124C20.3627 20.1874 20.4665 20.0987 20.6065 19.9524C20.7102 19.8449 20.8002 19.7187 20.869 19.5749C20.9665 19.3712 21.064 18.9824 21.104 18.6587C21.134 18.4112 21.1252 18.2762 21.1215 18.1924C21.1165 18.0587 21.0052 17.9199 20.884 17.8612L20.1565 17.5349C20.1565 17.5349 19.069 17.0612 18.404 16.7587C18.3344 16.7283 18.2598 16.7109 18.184 16.7074C18.0985 16.6986 18.012 16.7082 17.9305 16.7356C17.849 16.763 17.7744 16.8075 17.7115 16.8662C17.7052 16.8637 17.6215 16.9349 16.7177 18.0299C16.6659 18.0996 16.5944 18.1523 16.5125 18.1812C16.4306 18.2102 16.3419 18.2141 16.2577 18.1924C16.1763 18.1706 16.0965 18.143 16.019 18.1099C15.864 18.0449 15.8102 18.0199 15.704 17.9749C14.9866 17.6618 14.3223 17.2388 13.7352 16.7212C13.5777 16.5837 13.4315 16.4337 13.2815 16.2887C12.7897 15.8177 12.3611 15.2849 12.0065 14.7037L11.9327 14.5849C11.8798 14.5051 11.8369 14.419 11.8052 14.3287C11.7577 14.1449 11.8815 13.9974 11.8815 13.9974C11.8815 13.9974 12.1852 13.6649 12.3265 13.4849C12.464 13.3099 12.5802 13.1399 12.6552 13.0187C12.8027 12.7812 12.849 12.5374 12.7715 12.3487C12.4215 11.4937 12.059 10.6424 11.6865 9.7974C11.6127 9.6299 11.394 9.5099 11.1952 9.48615C11.1277 9.47865 11.0602 9.47115 10.9927 9.46615C10.8249 9.45781 10.6567 9.45948 10.489 9.47115L10.7415 9.4624Z"
+                        fill="#101212"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1101_5924">
+                        <rect width="30" height="30" fill="white" transform="translate(0 0.337402)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+              <p class="share-modal__btn-text">Whatsapp</p>
+            </a>
+
+            <a
+              href="https://vk.com/share.php?url=https://new.goldfishmedia.group"
+              target="_blank"
+              class="share-modal__btn"
+            >
+              <div class="share-modal__btn-img-wrapper">
+                <div class="share-modal__btn-img-box">
+                  <svg
+                    width="30"
+                    height="31"
+                    viewBox="0 0 30 31"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1101_5928)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.1831 3.5205C1.25 5.45359 1.25 8.56484 1.25 14.7874V15.8874C1.25 22.11 1.25 25.2212 3.1831 27.1543C5.11619 29.0874 8.22744 29.0874 14.45 29.0874H15.55C21.7726 29.0874 24.8838 29.0874 26.8169 27.1543C28.75 25.2212 28.75 22.11 28.75 15.8874V14.7874C28.75 8.56484 28.75 5.45359 26.8169 3.5205C24.8838 1.5874 21.7726 1.5874 15.55 1.5874H14.45C8.22744 1.5874 5.11619 1.5874 3.1831 3.5205ZM5.89069 9.95204C6.03965 17.102 9.61464 21.3989 15.8823 21.3989H16.2376V17.3083C18.5407 17.5375 20.2823 19.2218 20.9813 21.3989H24.2355C23.3417 18.1448 20.9927 16.3458 19.526 15.6583C20.9927 14.8104 23.0552 12.7479 23.5479 9.95204H20.5916C19.9499 12.2208 18.048 14.2833 16.2376 14.4781V9.95204H13.2812V17.8812C11.4479 17.4229 9.13339 15.2 9.03027 9.95204H5.89069Z"
+                        fill="#101212"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1101_5928">
+                        <rect width="27.5" height="27.5" fill="white" transform="translate(1.25 1.5874)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+              <p class="share-modal__btn-text">VK</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="modal-content-map__link modal-content-map__link--desktop">
+        <p class="modal-content-map__link-text">Поделиться</p>
+        <div class="modal-content-map__link-svg-wrapper">
+          <div class="modal-content-map__link-svg-box">
+            <div class="modal-content-map__link-svg-inner-box">
+              <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1101_5321)">
+                  <path
+                    d="M2.72333 22.5046C2.70235 22.5046 2.6814 22.503 2.66067 22.4998C2.5739 22.4867 2.49332 22.447 2.42999 22.3862C2.36666 22.3255 2.32369 22.2466 2.30699 22.1605C1.47482 17.8589 2.44543 13.8787 5.03592 10.9535C7.75928 7.87947 11.98 6.25959 16.6704 6.4718V2.92031C16.6703 2.83631 16.6952 2.75418 16.7418 2.68433C16.7885 2.61447 16.8548 2.56003 16.9324 2.52789C17.01 2.49576 17.0954 2.48737 17.1778 2.5038C17.2602 2.52023 17.3358 2.56073 17.3952 2.62018L25.3864 10.6112C25.466 10.6908 25.5106 10.7988 25.5106 10.9114C25.5106 11.024 25.466 11.132 25.3864 11.2117L17.3952 19.2027C17.3358 19.2621 17.2602 19.3026 17.1778 19.319C17.0954 19.3355 17.01 19.3271 16.9324 19.295C16.8548 19.2628 16.7885 19.2084 16.7418 19.1385C16.6952 19.0687 16.6703 18.9865 16.6704 18.9025V15.4852C10.8176 14.166 5.43583 17.863 3.09798 22.279C3.06189 22.347 3.00795 22.404 2.94195 22.4437C2.87595 22.4835 2.80037 22.5045 2.72333 22.5046Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1101_5321">
+                    <rect width="26.5263" height="24" fill="white" transform="translate(0.5 0.5)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="modal" id="modal-menu">
+      <div class="modal-content-left">
+        <div>
+          <div class="logo_flex_close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="119" height="30" viewBox="0 0 119 30" fill="none">
+              <path
+                d="M40.1816 0.65741H45.4314L54.9177 10.3356V17.8686L45.984 8.73921V29.3428H40.1816V0.65741ZM71.9102 0.65741H66.7065L57.1741 10.3356V17.8686L66.1078 8.73921V29.3428H71.9102V0.65741Z"
+                fill="white"
+              />
+              <path
+                d="M0 4.09953V25.9503L5.38786 29.3427H14.736V23.7054H5.98652V6.54403H14.9202V0.657288H5.38786L0 4.09953ZM31.9127 9.93638H25.9262V6.54403H16.9925V0.657288H26.5249L31.9127 4.09953V9.93638ZM31.9127 12.1813V25.9503L26.5249 29.3427H17.1767V23.7054H25.9262V17.8685H16.9925V12.1813H31.9127Z"
+                fill="white"
+              />
+              <path
+                d="M80.0869 4.09966V25.9504L85.4748 29.3428H94.8229V23.7055H86.0734V6.54415H95.0071V0.65741H85.4748L80.0869 4.09966ZM112 9.93651H106.013V6.54415H97.0794V0.65741H106.612L112 4.09966V9.93651ZM112 12.1814V25.9504L106.612 29.3428H97.2636V23.7055H106.013V17.8686H97.0794V12.1814H112Z"
+                fill="white"
+              />
+            </svg>
+
+            <div class="modal-content-close close" data-dismiss="#modal-menu">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                <path d="M25 1L1 25M1 1L25 25" stroke="#E8E8E8" stroke-width="2" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal_menu_items">
+            <div class="modal_menu_item">
+              <a href="">Главная</a>
+            </div>
+            <div class="modal_menu_item">
+              <a href="">Услуги</a>
+            </div>
+            <div class="modal_menu_item">
+              <a href="">О нас</a>
+            </div>
+            <div class="modal_menu_item">
+              <a href="">Статьи</a>
+            </div>
+            <div class="modal_menu_item">
+              <a href="">Контакты</a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="modal_networks">
+            <a class="modal_networks_item">
+              <div class="modal_networks_item_icon">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                  >
+                    <path
+                      d="M9.00074 2C12.8668 2 16.0007 5.1339 16.0007 9C16.0007 12.8661 12.8668 16 9.00074 16C7.76369 16.002 6.5484 15.6746 5.47974 15.0515L2.00354 16L2.94994 12.5224C2.32631 11.4534 1.99868 10.2376 2.00074 9C2.00074 5.1339 5.13464 2 9.00074 2ZM6.61514 5.71L6.47514 5.7156C6.38451 5.72112 6.29593 5.74493 6.21474 5.7856C6.13881 5.8286 6.06949 5.88236 6.00894 5.9452C5.92494 6.0243 5.87734 6.0929 5.82624 6.1594C5.56733 6.49603 5.42792 6.90932 5.43004 7.334C5.43144 7.677 5.52104 8.0109 5.66104 8.3231C5.94734 8.9545 6.41844 9.623 7.04004 10.2425C7.18984 10.3916 7.33684 10.5414 7.49504 10.6807C8.26741 11.3607 9.18782 11.8511 10.183 12.1129L10.5806 12.1738C10.7101 12.1808 10.8396 12.171 10.9698 12.1647C11.1737 12.1542 11.3728 12.099 11.5529 12.003C11.6446 11.9558 11.7341 11.9044 11.821 11.849C11.821 11.849 11.8511 11.8294 11.9085 11.786C12.003 11.716 12.0611 11.6663 12.1395 11.5844C12.1976 11.5242 12.248 11.4535 12.2865 11.373C12.3411 11.2589 12.3957 11.0412 12.4181 10.8599C12.4349 10.7213 12.43 10.6457 12.4279 10.5988C12.4251 10.5239 12.3628 10.4462 12.2949 10.4133L11.8875 10.2306C11.8875 10.2306 11.2785 9.9653 10.9061 9.7959C10.8672 9.77888 10.8254 9.76916 10.7829 9.7672C10.735 9.76228 10.6867 9.76767 10.641 9.783C10.5954 9.79834 10.5535 9.82326 10.5183 9.8561C10.5148 9.8547 10.4679 9.8946 9.96184 10.5078C9.93279 10.5468 9.89278 10.5763 9.8469 10.5925C9.80103 10.6087 9.75136 10.6109 9.70424 10.5988C9.65864 10.5866 9.61396 10.5711 9.57054 10.5526C9.48374 10.5162 9.45364 10.5022 9.39414 10.477C8.99239 10.3017 8.62042 10.0648 8.29164 9.7749C8.20344 9.6979 8.12154 9.6139 8.03754 9.5327C7.76215 9.26896 7.52215 8.9706 7.32354 8.6451L7.28224 8.5786C7.25258 8.53392 7.22859 8.48571 7.21084 8.4351C7.18424 8.3322 7.25354 8.2496 7.25354 8.2496C7.25354 8.2496 7.42364 8.0634 7.50274 7.9626C7.57974 7.8646 7.64484 7.7694 7.68684 7.7015C7.76944 7.5685 7.79534 7.432 7.75194 7.3263C7.55594 6.8475 7.35294 6.3708 7.14434 5.8976C7.10304 5.8038 6.98054 5.7366 6.86924 5.7233C6.83144 5.7191 6.79364 5.7149 6.75584 5.7121C6.66184 5.70743 6.56764 5.70836 6.47374 5.7149L6.61514 5.71Z"
+                      fill="#CA116A"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <span> Написать в WhatsApp </span>
+            </a>
+            <a class="modal_networks_item">
+              <div class="modal_networks_item_icon">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_2045_997)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M15.6998 8C15.6998 12.2526 12.2524 15.7 7.9998 15.7C3.74721 15.7 0.299805 12.2526 0.299805 8C0.299805 3.74741 3.74721 0.299999 7.9998 0.299999C12.2524 0.299999 15.6998 3.74741 15.6998 8ZM8.27574 5.98448C7.5268 6.29599 6.02998 6.94073 3.78527 7.91871C3.42076 8.06367 3.22982 8.20547 3.21244 8.34413C3.18306 8.57846 3.47651 8.67073 3.87611 8.79639C3.93047 8.81348 3.98679 8.83119 4.04453 8.84996C4.43768 8.97775 4.96653 9.12726 5.24146 9.1332C5.49085 9.13859 5.7692 9.03578 6.0765 8.82476C8.1738 7.40902 9.25643 6.69344 9.3244 6.67802C9.37236 6.66713 9.43881 6.65345 9.48383 6.69347C9.52885 6.73348 9.52443 6.80927 9.51966 6.8296C9.49059 6.95353 8.33868 8.02444 7.74257 8.57864C7.55674 8.75141 7.42492 8.87396 7.39797 8.90195C7.33761 8.96465 7.27609 9.02395 7.21696 9.08095C6.85171 9.43305 6.57781 9.69709 7.23212 10.1283C7.54656 10.3355 7.79817 10.5068 8.04919 10.6778C8.32332 10.8645 8.59674 11.0507 8.95051 11.2826C9.04064 11.3416 9.12672 11.403 9.21056 11.4628C9.52958 11.6902 9.8162 11.8945 10.1703 11.862C10.3761 11.843 10.5886 11.6495 10.6965 11.0725C10.9516 9.70885 11.453 6.75417 11.5689 5.53662C11.579 5.42995 11.5663 5.29343 11.556 5.2335C11.5458 5.17357 11.5243 5.08818 11.4464 5.02498C11.3542 4.95012 11.2118 4.93433 11.1481 4.93545C10.8584 4.94055 10.4141 5.09506 8.27574 5.98448Z"
+                        fill="#CA116A"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2045_997">
+                        <rect
+                          width="15.4"
+                          height="15.4"
+                          fill="white"
+                          transform="translate(0.299805 0.299999)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+              <span> Написать в Telegram </span>
+            </a>
+          </div>
+
+          <div class="modal-btn">
+            <div
+              class="btn_arrow_right btn-modal close"
+              data-dismiss="#modal-menu"
+              data-target="#modal-presentation"
+            >
+              <span>Запросить презентацию</span>
+              <div class="btn_arrow_right_icon">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="13"
+                    viewBox="0 0 19 13"
+                    fill="none"
+                  >
+                    <path
+                      d="M0.99939 5.5L-0.000609719 5.5L-0.00061002 7.5L0.99939 7.5L0.99939 5.5ZM17.9994 6.5L18.6655 7.24587L18.6655 5.75413L17.9994 6.5ZM0.99939 7.5L17.9994 7.5L17.9994 5.5L0.99939 5.5L0.99939 7.5ZM18.6655 5.75413L12.5067 0.254129L11.1746 1.74587L17.3333 7.24587L18.6655 5.75413ZM17.3333 5.75413L11.1746 11.2541L12.5067 12.7459L18.6655 7.24587L17.3333 5.75413Z"
+                      fill="#CA116A"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="13"
+                    viewBox="0 0 19 13"
+                    fill="none"
+                  >
+                    <path
+                      d="M0.99939 5.5L-0.000609719 5.5L-0.00061002 7.5L0.99939 7.5L0.99939 5.5ZM17.9994 6.5L18.6655 7.24587L18.6655 5.75413L17.9994 6.5ZM0.99939 7.5L17.9994 7.5L17.9994 5.5L0.99939 5.5L0.99939 7.5ZM18.6655 5.75413L12.5067 0.254129L11.1746 1.74587L17.3333 7.24587L18.6655 5.75413ZM17.3333 5.75413L11.1746 11.2541L12.5067 12.7459L18.6655 7.24587L17.3333 5.75413Z"
+                      fill="#CA116A"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-soc">
+      <div class="modal-content-right-bottom">
+        <div class="logo_flex_close">
+          <div class="modal-title">
+            <h3>Запросить презентацию</h3>
+          </div>
+
+          <div class="modal-content-close close" data-dismiss="#modal-soc">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+              <path d="M25 1L1 25M1 1L25 25" stroke="#E8E8E8" stroke-width="2" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="modal_networks d-flex justify-content-between row-cols-2">
+          <a class="modal_networks_item">
+            <div class="modal_networks_item_icon">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                >
+                  <path
+                    d="M9.00074 2C12.8668 2 16.0007 5.1339 16.0007 9C16.0007 12.8661 12.8668 16 9.00074 16C7.76369 16.002 6.5484 15.6746 5.47974 15.0515L2.00354 16L2.94994 12.5224C2.32631 11.4534 1.99868 10.2376 2.00074 9C2.00074 5.1339 5.13464 2 9.00074 2ZM6.61514 5.71L6.47514 5.7156C6.38451 5.72112 6.29593 5.74493 6.21474 5.7856C6.13881 5.8286 6.06949 5.88236 6.00894 5.9452C5.92494 6.0243 5.87734 6.0929 5.82624 6.1594C5.56733 6.49603 5.42792 6.90932 5.43004 7.334C5.43144 7.677 5.52104 8.0109 5.66104 8.3231C5.94734 8.9545 6.41844 9.623 7.04004 10.2425C7.18984 10.3916 7.33684 10.5414 7.49504 10.6807C8.26741 11.3607 9.18782 11.8511 10.183 12.1129L10.5806 12.1738C10.7101 12.1808 10.8396 12.171 10.9698 12.1647C11.1737 12.1542 11.3728 12.099 11.5529 12.003C11.6446 11.9558 11.7341 11.9044 11.821 11.849C11.821 11.849 11.8511 11.8294 11.9085 11.786C12.003 11.716 12.0611 11.6663 12.1395 11.5844C12.1976 11.5242 12.248 11.4535 12.2865 11.373C12.3411 11.2589 12.3957 11.0412 12.4181 10.8599C12.4349 10.7213 12.43 10.6457 12.4279 10.5988C12.4251 10.5239 12.3628 10.4462 12.2949 10.4133L11.8875 10.2306C11.8875 10.2306 11.2785 9.9653 10.9061 9.7959C10.8672 9.77888 10.8254 9.76916 10.7829 9.7672C10.735 9.76228 10.6867 9.76767 10.641 9.783C10.5954 9.79834 10.5535 9.82326 10.5183 9.8561C10.5148 9.8547 10.4679 9.8946 9.96184 10.5078C9.93279 10.5468 9.89278 10.5763 9.8469 10.5925C9.80103 10.6087 9.75136 10.6109 9.70424 10.5988C9.65864 10.5866 9.61396 10.5711 9.57054 10.5526C9.48374 10.5162 9.45364 10.5022 9.39414 10.477C8.99239 10.3017 8.62042 10.0648 8.29164 9.7749C8.20344 9.6979 8.12154 9.6139 8.03754 9.5327C7.76215 9.26896 7.52215 8.9706 7.32354 8.6451L7.28224 8.5786C7.25258 8.53392 7.22859 8.48571 7.21084 8.4351C7.18424 8.3322 7.25354 8.2496 7.25354 8.2496C7.25354 8.2496 7.42364 8.0634 7.50274 7.9626C7.57974 7.8646 7.64484 7.7694 7.68684 7.7015C7.76944 7.5685 7.79534 7.432 7.75194 7.3263C7.55594 6.8475 7.35294 6.3708 7.14434 5.8976C7.10304 5.8038 6.98054 5.7366 6.86924 5.7233C6.83144 5.7191 6.79364 5.7149 6.75584 5.7121C6.66184 5.70743 6.56764 5.70836 6.47374 5.7149L6.61514 5.71Z"
+                    fill="#CA116A"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span> WhatsApp </span>
+          </a>
+          <a class="modal_networks_item">
+            <div class="modal_networks_item_icon">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_2045_997)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M15.6998 8C15.6998 12.2526 12.2524 15.7 7.9998 15.7C3.74721 15.7 0.299805 12.2526 0.299805 8C0.299805 3.74741 3.74721 0.299999 7.9998 0.299999C12.2524 0.299999 15.6998 3.74741 15.6998 8ZM8.27574 5.98448C7.5268 6.29599 6.02998 6.94073 3.78527 7.91871C3.42076 8.06367 3.22982 8.20547 3.21244 8.34413C3.18306 8.57846 3.47651 8.67073 3.87611 8.79639C3.93047 8.81348 3.98679 8.83119 4.04453 8.84996C4.43768 8.97775 4.96653 9.12726 5.24146 9.1332C5.49085 9.13859 5.7692 9.03578 6.0765 8.82476C8.1738 7.40902 9.25643 6.69344 9.3244 6.67802C9.37236 6.66713 9.43881 6.65345 9.48383 6.69347C9.52885 6.73348 9.52443 6.80927 9.51966 6.8296C9.49059 6.95353 8.33868 8.02444 7.74257 8.57864C7.55674 8.75141 7.42492 8.87396 7.39797 8.90195C7.33761 8.96465 7.27609 9.02395 7.21696 9.08095C6.85171 9.43305 6.57781 9.69709 7.23212 10.1283C7.54656 10.3355 7.79817 10.5068 8.04919 10.6778C8.32332 10.8645 8.59674 11.0507 8.95051 11.2826C9.04064 11.3416 9.12672 11.403 9.21056 11.4628C9.52958 11.6902 9.8162 11.8945 10.1703 11.862C10.3761 11.843 10.5886 11.6495 10.6965 11.0725C10.9516 9.70885 11.453 6.75417 11.5689 5.53662C11.579 5.42995 11.5663 5.29343 11.556 5.2335C11.5458 5.17357 11.5243 5.08818 11.4464 5.02498C11.3542 4.95012 11.2118 4.93433 11.1481 4.93545C10.8584 4.94055 10.4141 5.09506 8.27574 5.98448Z"
+                      fill="#CA116A"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2045_997">
+                      <rect
+                        width="15.4"
+                        height="15.4"
+                        fill="white"
+                        transform="translate(0.299805 0.299999)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <span> Telegram </span>
+          </a>
+        </div>
+
+        <div class="modal-btn">
+          <div
+            class="btn_arrow_right btn-modal close"
+            data-dismiss="#modal-soc"
+            data-target="#modal-presentation"
+          >
+            <span>Запросить презентацию</span>
+            <div class="btn_arrow_right_icon">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="19"
+                  height="13"
+                  viewBox="0 0 19 13"
+                  fill="none"
+                >
+                  <path
+                    d="M0.99939 5.5L-0.000609719 5.5L-0.00061002 7.5L0.99939 7.5L0.99939 5.5ZM17.9994 6.5L18.6655 7.24587L18.6655 5.75413L17.9994 6.5ZM0.99939 7.5L17.9994 7.5L17.9994 5.5L0.99939 5.5L0.99939 7.5ZM18.6655 5.75413L12.5067 0.254129L11.1746 1.74587L17.3333 7.24587L18.6655 5.75413ZM17.3333 5.75413L11.1746 11.2541L12.5067 12.7459L18.6655 7.24587L17.3333 5.75413Z"
+                    fill="#CA116A"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="19"
+                  height="13"
+                  viewBox="0 0 19 13"
+                  fill="none"
+                >
+                  <path
+                    d="M0.99939 5.5L-0.000609719 5.5L-0.00061002 7.5L0.99939 7.5L0.99939 5.5ZM17.9994 6.5L18.6655 7.24587L18.6655 5.75413L17.9994 6.5ZM0.99939 7.5L17.9994 7.5L17.9994 5.5L0.99939 5.5L0.99939 7.5ZM18.6655 5.75413L12.5067 0.254129L11.1746 1.74587L17.3333 7.24587L18.6655 5.75413ZM17.3333 5.75413L11.1746 11.2541L12.5067 12.7459L18.6655 7.24587L17.3333 5.75413Z"
+                    fill="#CA116A"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.sng-it.ru/bitrix/templates/master/js/jquery.inputmask.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
+
+    <!-- <script src="bootstrap/js/bootstrap.bundle.min.js" defer></script> -->
+    <script src="bundle/swiper-bundle.min.js"></script>
+
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+
+    <script src="js/script.js?v=1300"></script>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+      ymaps.ready(init);
+      function init() {
+        var map = new ymaps.Map(
+          'map',
+          {
+            center: [55.805195, 37.589565],
+            zoom: 12
+          },
+          {
+            searchControlProvider: 'yandex#search',
+            suppressObsoleteBrowserNotifier: true
+          }
+        );
+        var placemark = new ymaps.Placemark(
+          [55.805195, 37.589565],
+          {},
+          {
+            iconLayout: 'default#image',
+            iconImageHref: 'data:image/svg+xml,'.concat(
+              encodeURIComponent(
+                "<svg xmlns='http://www.w3.org/2000/svg' width='61' height='60' viewBox='0 0 61 60' fill='none'><circle cx='30.5' cy='30' r='30' fill='#E8E8E8'/><path d='M30.6339 18.75V42.1875M42.6875 30.4688L19.25 30.4687' stroke='#CA116A' stroke-width='1.875'/></svg>"
+              )
+            ),
+            iconImageSize: [54, 54],
+            iconImageOffset: [-27, -27]
+          }
+        );
+
+        placemark.events.add(['click'], function (e) {
+          const getScrollbarWidth = () => window.innerWidth - document.documentElement.clientWidth;
+          let scrollWith = getScrollbarWidth();
+          document.body.style.paddingRight = `${scrollWith}px`;
+          document.querySelector('header').style.paddingRight = `${scrollWith}px`;
+
+          if (document.querySelector('filter-btn')) {
+            document.querySelector('filter-btn').style.marginRight = `${scrollWith}px`;
+          }
+
+          $('#modal-map').css('display', 'block');
+          $('#modal-map').addClass('active');
+          $('body').css('overflow', 'hidden');
+        });
+
+        placemark.events.add(['hover'], function (e) {});
+
+        placemark.events.add('mouseenter', function (e) {
+          let iconElement = document.querySelector("[class*='placemark-overlay'] [class*='image']");
+          if (iconElement) {
+            iconElement.classList.add('hovered');
+          }
+        });
+
+        // Обработка события ухода мыши
+        placemark.events.add('mouseleave', function (e) {
+          let iconElement = document.querySelector("[class*='placemark-overlay'] [class*='image']");
+          if (iconElement) {
+            iconElement.classList.remove('hovered');
+          }
+        });
+
+        map.geoObjects.add(placemark);
+        map
+          .panTo([55.805195, 37.589565], {
+            flying: true
+          })
+          .then(function () {
+            map.setZoom(13);
+          });
+
+        // Убираем все элементы управления с карты
+        map.controls.remove('searchControl');
+        map.controls.remove('trafficControl');
+        map.controls.remove('typeSelector');
+        map.controls.remove('fullscreenControl');
+        map.controls.remove('zoomControl');
+        map.controls.remove('routeButtonControl');
+        map.controls.remove('geolocationControl');
+        map.controls.remove('routeEditor');
+        map.controls.remove('routePanelControl');
+        map.controls.remove('masstransit');
+        map.controls.remove('rulerControl');
+
+        $(document).on('click', '.btn-map-plus', function () {
+          var getZooom = map.getZoom();
+          if (getZooom < 18) {
+            getZooom++;
+            map.setZoom(getZooom);
+            $('.btn-map-minus').removeClass('hide');
+          } else {
+            $(this).addClass('hide');
+          }
+        });
+
+        $(document).on('click', '.btn-map-minus', function () {
+          var getZooom = map.getZoom();
+          if (getZooom > 5) {
+            getZooom--;
+            map.setZoom(getZooom);
+            $('.btn-map-plus').removeClass('hide');
+          } else {
+            $(this).addClass('hide');
+          }
+        });
+      }
+    </script>
+
+    <script type="text/javascript">
+      // window.onbeforeunload = function () {
+      //   window.scrollTo(0, 0);
+      // };
+    </script>
+  </body>
+</html>
