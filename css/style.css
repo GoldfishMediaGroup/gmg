@@ -4991,8 +4991,8 @@ footer {
   width: 100%;
   height: 63.8rem;
   background: rgba(189, 189, 189, 0.03);
-  -webkit-mask-image: url(/newImages/new05-11/promotion-mask.svg);
-  mask-image: url(/newImages/new05-11/promotion-mask.svg);
+  -webkit-mask-image: url(../newImages/new05-11/promotion-mask.svg);
+  mask-image: url(../newImages/new05-11/promotion-mask.svg);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-size: contain;
