@@ -53,6 +53,9 @@ document.addEventListener('DOMContentLoaded', () => {
   try {
     detailsSwiperMob();
   } catch {}
+  try {
+    productionDetResultSwiper();
+  } catch {}
 });
 
 function modals() {
@@ -777,7 +780,7 @@ function animBlocks() {
     );
   }
 
-  function animWorks () {
+  function animWorks() {
     gsap.fromTo(
       '.works__container',
       {
@@ -791,6 +794,46 @@ function animBlocks() {
         ease: 'ease-in-out',
         scrollTrigger: {
           trigger: '.works',
+          start: 'top 70%'
+        }
+      }
+    );
+  }
+
+  function animProductionDetResult() {
+    gsap.fromTo(
+      '.production-det-result__container',
+      {
+        y: 500,
+        opacity: 0.2
+      },
+      {
+        duration: 1,
+        y: 0,
+        opacity: 1,
+        ease: 'ease-in-out',
+        scrollTrigger: {
+          trigger: '.production-det-result',
+          start: 'top 70%'
+        }
+      }
+    );
+  }
+
+  function animPromotion() {
+    gsap.fromTo(
+      '.promotion__container',
+      {
+        y: 500,
+        opacity: 0.2
+      },
+      {
+        duration: 1,
+        y: 0,
+        opacity: 1,
+        ease: 'ease-in-out',
+        scrollTrigger: {
+          trigger: '.promotion',
           start: 'top 70%'
         }
       }
@@ -839,6 +882,12 @@ function animBlocks() {
   try {
     animWorks();
   } catch {}
+  try {
+    animProductionDetResult()
+  } catch {}
+  try {
+    animPromotion()
+  } catch {}
 }
 
 function modalMap() {
@@ -859,10 +908,7 @@ function modalMap() {
   modal.addEventListener('click', (e) => {
     let target = e.target;
 
-    if (
-      target.classList.contains('share-modal') ||
-      target.classList.contains('share-modal__close-wrapper')
-    ) {
+    if (target.classList.contains('share-modal') || target.classList.contains('share-modal__close-wrapper')) {
       modal.classList.remove('isActive');
     }
   });
@@ -1116,9 +1162,39 @@ function worksSwiper() {
     },
     speed: speed,
     breakpoints: {
-      575: {  spaceBetween: rem(4),}
-    },
+      575: { spaceBetween: rem(4) }
+    }
   });
 
   // swiperMidle.controller.control = [swiperVertical];
+}
+
+function productionDetResultSwiper() {
+  const swiper = new Swiper('.production-det-result__swiper', {
+    loop: false,
+    // loop: true,
+    navigation: {
+      nextEl: '.production-det-result__slider_arrow.swiper-button-next',
+      prevEl: '.production-det-result__slider_arrow.swiper-button-prev'
+    },
+    slidesPerView: 3,
+    spaceBetween: rem(4),
+    // grabCursor: true,
+
+    speed: 800,
+    breakpoints: {
+      300: {
+        slidesPerView: 1.3,
+        spaceBetween: rem(2.4),
+      },
+      576: {
+        slidesPerView: 2.4,
+        spaceBetween: rem(.24),
+      },
+      765: {
+        slidesPerView: 3,
+        spaceBetween: rem(4),
+      },
+    }
+  });
 }

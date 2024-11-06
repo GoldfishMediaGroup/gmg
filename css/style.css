@@ -58,12 +58,12 @@ body {
 }
 
 body::-webkit-scrollbar {
-    width:0.4rem;
-    background-color: #fff;
+  width: 0.4rem;
+  background-color: #fff;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #CA116A;
+  background-color: #ca116a;
 }
 
 header {
@@ -72,8 +72,7 @@ header {
   position: fixed;
   z-index: 200;
   top: 0;
-  transition: background-color 0.5s, backdrop-filter 0.5s, -webkit-backdrop-filter 0.5s,
-    transform 0.3s;
+  transition: background-color 0.5s, backdrop-filter 0.5s, -webkit-backdrop-filter 0.5s, transform 0.3s;
 }
 
 header.fixed-nav {
@@ -1288,7 +1287,8 @@ img {
 }
 
 .works_item--rino {
-  /* width: fit-content; */
+  width: fit-content;
+  margin-right: 5rem;
 }
 
 .works_item-rino-link {
@@ -4572,7 +4572,7 @@ footer {
   /* letter-spacing: 0.2rem; */
 }
 
-.works__right-text-swiper--over .works__right-text-slide-text--smal  {
+.works__right-text-swiper--over .works__right-text-slide-text--smal {
   font-size: 14.6rem;
 }
 .works__right-text-slide-text--smal {
@@ -4628,22 +4628,18 @@ footer {
 }
 
 .works__swiper-mob {
-
 }
 
 .works__swiper-wrapper-mob {
 }
 
 .works__swiper-slide-mob {
-
 }
 
 .works__slide-inner-mob {
-
 }
 
 .works__slide-content-box-mob {
-
 }
 
 .works__slide-title-mob {
@@ -4653,32 +4649,25 @@ footer {
 }
 
 .works__slide-link-svg-wrapper-mob {
-
 }
-
-
 
 .works__slide-link-svg-box-mob {
 }
 
 .works__slide-bg-box {
-
 }
 
 .works__slide-bg-svg-box {
 }
-.works__slide-bg-svg-box svg{
-
+.works__slide-bg-svg-box svg {
 }
 
 .works__slide-bg-img-box {
-
 }
 
 .works__slide-bg-img-box img {
-
 }
-.works__swiper-btn{
+.works__swiper-btn {
   border: 0.2rem solid var(--white);
   width: 8rem;
   height: 8rem;
@@ -4702,4 +4691,379 @@ footer {
   height: 1.3rem;
   object-fit: cover;
   transition: transform 0.3s;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.production-det-banner {
+  max-width: 192rem;
+  width: 100%;
+  overflow: hidden;
+  margin: 7.6rem auto 0;
+  position: relative;
+}
+.production-det-banner__container {
+}
+
+.production-det-banner__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.production-det-banner__content-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding-bottom: 6.2rem;
+  width: 59rem;
+  flex-shrink: 0;
+}
+
+.production-det-banner__title-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.production-det-banner__title {
+  font-family: 'Akzidenz-Grotesk Pro';
+  font-weight: 300;
+  font-size: 7.2rem;
+  line-height: 105%;
+  color: #fff;
+}
+
+.production-det-banner__desc {
+  font-family: 'Gilroy';
+  color: #a9a9a9;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 150%;
+  font-family: 'Gilroy';
+  color: #a9a9a9;
+}
+.production-det-banner__btn {
+  width: fit-content;
+}
+
+.production-det-banner__btn span {
+  padding: 2rem 3.7rem;
+}
+
+.production-det-banner__img-wrapper {
+  margin-right: -5.6rem;
+  position: relative;
+}
+
+.production-det-banner__img-box {
+  width: 101.2rem;
+  height: 87.4rem;
+}
+
+.production-det-banner__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.production-det-banner__img-desk {
+  display: block;
+}
+
+.production-det-banner__img-mob {
+  display: none;
+}
+
+.production-det-banner__img-text-box {
+  position: absolute;
+  top: 9.5rem;
+  right: 5.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.production-det-banner__img-title {
+  font-family: 'Akzidenz-Grotesk Pro';
+  font-weight: 300;
+  font-size: 3.2rem;
+  line-height: 130%;
+  color: #fff;
+  padding-bottom: 0.4rem;
+  border-bottom: 0.1rem solid #fff;
+}
+
+.production-det-banner__img-text {
+  font-family: 'Gilroy';
+  color: #a9a9a9;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 150%;
+}
+
+.production-det-banner__bg-box {
+  position: absolute;
+  width: 90.9rem;
+  height: 38.3rem;
+  top: 6rem;
+  left: 0;
+  pointer-events: none;
+}
+.production-det-banner__bg-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.production-det-result {
+  margin-top: 20rem;
+}
+.production-det-result__container {
+}
+.production-det-result__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+.production-det-result__title-box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.production-det-result__title {
+  font-family: 'Akzidenz-Grotesk Pro';
+  font-weight: 300;
+  font-size: 7.2rem;
+  line-height: 105%;
+  color: var(--white);
+  width: 94.1rem;
+}
+.production-det-result__title span {
+  color: #e03c27;
+}
+
+.production-det-result__slider {
+}
+
+.production-det-result__slider_arrows {
+}
+
+.production-det-result__slider_arrow {
+}
+
+.production-det-result__slider_arrow {
+}
+
+.production-det-result__swiper-box {
+}
+
+.production-det-result__swiper {
+  overflow: visible !important;
+}
+
+.production-det-result__swiper-wrapper {
+}
+
+.production-det-result__swiper-slide {
+}
+
+.production-det-result__slide-inner {
+  width: 53.3rem;
+  height: 67.9rem;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.production-det-result__slide-inner:hover .production-det-result__slide-content-border-box {
+  opacity: 1;
+}
+
+.production-det-result__slide-bg-box {
+  position: absolute;
+  inset: 0;
+}
+.production-det-result__slide-bg-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.production-det-result__slide-content-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.production-det-result__slide-num {
+  font-family: 'Akzidenz-Grotesk Pro';
+  font-weight: 300;
+  font-size: 3.2rem;
+  line-height: 130%;
+  color: var(--white);
+  position: absolute;
+  top: 0.15rem;
+  left: 3.2rem;
+}
+
+.production-det-result__slide-content-box {
+  position: relative;
+  width: 53.3rem;
+  height: 38.4rem;
+}
+
+.production-det-result__slide-content-bg-wrapper {
+  position: absolute;
+  inset: 0;
+}
+
+.production-det-result__slide-content-bg-box {
+  width: 53.3rem;
+  height: 38.4rem;
+}
+
+.production-det-result__slide-content-border-box {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+.production-det-result__slide-content-bg-box img,
+.production-det-result__slide-content-border-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.production-det-result__slide-content-text-box {
+  position: relative;
+  z-index: 5;
+  padding: 9.3rem 8.6rem 9.3rem 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.production-det-result__slide-title {
+  font-family: 'Akzidenz-Grotesk Pro';
+  font-weight: 300;
+  font-size: 3.2rem;
+  line-height: 130%;
+  color: var(--white);
+}
+
+.production-det-result__slide-desc {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 150%;
+  font-family: 'Gilroy';
+  color: #a9a9a9;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.promotion {
+}
+
+.promotion__inner {
+  width: 100%;
+  height: 63.8rem;
+  position: relative;
+}
+
+.promotion__content-wrapper {
+  width: 100%;
+  height: 63.8rem;
+  background: rgba(189, 189, 189, 0.03);
+  -webkit-mask-image: url(/newImages/new05-11/promotion-mask.svg);
+  mask-image: url(/newImages/new05-11/promotion-mask.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  padding: 10.8rem 0 3rem 6rem;
+}
+
+.promotion__content-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 59rem;
+}
+
+.promotion__title-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.promotion__title {
+  font-family: 'Akzidenz-Grotesk Pro';
+  font-weight: 300;
+  font-size: 7.2rem;
+  line-height: 105%;
+  color: #fff;
+}
+
+.promotion__desc {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 150%;
+  font-family: 'Gilroy';
+  color: #a9a9a9;
+}
+
+.promotion__btn {
+  width: fit-content;
+}
+.promotion__btn span {
+  width: 22.7rem;
+}
+
+.promotion__img-box {
+  position: absolute;
+  width: 104.1rem;
+  height: 69.8rem;
+  top: -5.9rem;
+  right: 0;
+  pointer-events: none;
+}
+.promotion__img-box img {
+  width: 100%;
+}
+
+.promotion__img-box--mob {
+  display: none;
+}
+.promotion__img-box--desk {
+}
+
+.promotion__content-bg-box {
+  width: 132.6rem;
+  height: 61.8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+.promotion__content-bg-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
