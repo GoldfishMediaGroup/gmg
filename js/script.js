@@ -568,21 +568,6 @@ function animBlocks() {
     );
   }
 
-  function animSwiperRowMob() {
-    if (window.innerWidth < 1024) {
-      gsap.to('.servies_row_swiper_wrapper', {
-        duration: 1,
-        x: window.innerWidth < 576 ? '-40rem' : '-30rem',
-        scrollTrigger: {
-          trigger: '.servies_section',
-          start: 'top bottom',
-          scrub: 3,
-          duration: 5
-        }
-      });
-    }
-  }
-
   function animLineBlock() {
     gsap.fromTo(
       '.gsap_line .body_content',
@@ -840,6 +825,38 @@ function animBlocks() {
     );
   }
 
+
+  function animSwiperRowMob() {
+    if (window.innerWidth < 1024) {
+      gsap.to('.servies_row_swiper_wrapper', {
+        duration: 1,
+        x: window.innerWidth < 576 ? '-40rem' : '-30rem',
+        scrollTrigger: {
+          trigger: '.servies_section',
+          start: 'top bottom',
+          scrub: 3,
+          duration: 5
+        }
+      });
+    }
+  }
+
+  function animSwiperProductionDetResultMob() {
+    if (window.innerWidth < 1024) {
+      gsap.to('.production-det-result__swiper', {
+        duration: 1,
+        x: window.innerWidth < 768 ? '-40rem' : '-30rem',
+        scrollTrigger: {
+          trigger: '.production-det-result',
+          start: 'top bottom',
+          scrub: 3,
+          duration: 5
+        }
+      });
+    }
+  }
+
+
   try {
     // animMainBanner ()
   } catch {}
@@ -887,6 +904,9 @@ function animBlocks() {
   } catch {}
   try {
     animPromotion()
+  } catch {}
+  try {
+    animSwiperProductionDetResultMob()
   } catch {}
 }
 
@@ -1171,29 +1191,47 @@ function worksSwiper() {
 
 function productionDetResultSwiper() {
   const swiper = new Swiper('.production-det-result__swiper', {
-    loop: false,
-    // loop: true,
+    // loop: false,
+    loop: true,
     navigation: {
       nextEl: '.production-det-result__slider_arrow.swiper-button-next',
       prevEl: '.production-det-result__slider_arrow.swiper-button-prev'
     },
-    slidesPerView: 3,
-    spaceBetween: rem(4),
+    // slidesPerView: 3,
+    // spaceBetween: rem(4),
     // grabCursor: true,
 
+
+ 
     speed: 800,
     breakpoints: {
       300: {
-        slidesPerView: 1.3,
+        slidesPerView: 1.4,
         spaceBetween: rem(2.4),
+        // centeredSlides: true,
+        // loop: true,
       },
       576: {
-        slidesPerView: 2.4,
-        spaceBetween: rem(.24),
+        // slidesPerView: 2.4,
+
+         slidesPerView: 2.6,
+        spaceBetween: rem(2.4),
+        // centeredSlides: true,
+        // loop: true,
       },
-      765: {
+      768: {
+        // slidesPerView: 'auto',
+        slidesPerView: 3.5,
+        // slidesPerView: 2.6,
+        // centeredSlides: true,
+            loop: true,
+        spaceBetween: rem(4),
+      },
+      1024: {
         slidesPerView: 3,
         spaceBetween: rem(4),
+        loop: false,
+        centeredSlides: false
       },
     }
   });
