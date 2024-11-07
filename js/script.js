@@ -88,8 +88,8 @@ function modals() {
 
 function serviesSwiper() {
   const swiper = new Swiper('.servies_row_swiper_wrapper', {
-    // loop: false,
-    loop: true,
+    loop: false,
+    // loop: true,
     navigation: {
       nextEl: '.servies_row_swiper .swiper-button-next',
       prevEl: '.servies_row_swiper .swiper-button-prev'
@@ -100,18 +100,18 @@ function serviesSwiper() {
       300: {
         slidesPerView: 1.3,
         spaceBetween: rem(2),
-        centeredSlides: true
+        // centeredSlides: true
       },
       576: {
         slidesPerView: 2.4,
         spaceBetween: rem(4),
-        centeredSlides: true
+        // centeredSlides: true
       },
       1024: {
         slidesPerView: 4,
         spaceBetween: rem(4),
-        loop: false,
-        centeredSlides: false
+        // loop: false,
+        // centeredSlides: false
       },
       slidesPerGroup: 1
     }
@@ -285,7 +285,6 @@ function pinBlock() {
         pin: true,
         pinSpacing: true,
         scrub: 5,
-        // markers: true,
         defaults: {
           ease: 'power1.inOut',
           duration: 1,
@@ -359,7 +358,7 @@ function pinBlock() {
   //       duration: 10,
   //       invalidateOnRefresh: true,
   //       refreshPriority: 1, // Более высокий приоритет пересчета
-  //       markers: true,
+  //      ,
   //     }
   // });
 
@@ -825,19 +824,37 @@ function animBlocks() {
     );
   }
 
-
   function animSwiperRowMob() {
     if (window.innerWidth < 1024) {
-      gsap.to('.servies_row_swiper_wrapper', {
-        duration: 1,
-        x: window.innerWidth < 576 ? '-40rem' : '-30rem',
-        scrollTrigger: {
-          trigger: '.servies_section',
-          start: 'top bottom',
-          scrub: 3,
-          duration: 5
+      // gsap.to('.servies_row_swiper_wrapper', {
+      //   duration: 1,
+      //   x: window.innerWidth < 576 ? '-40rem' : '-30rem',
+      //   scrollTrigger: {
+      //     trigger: '.servies_section',
+      //     start: 'top bottom',
+      //     scrub: 3,
+      //     duration: 5
+      //   }
+      // });
+
+
+      gsap.fromTo(
+        '.servies_row_swiper_wrapper',
+        {
+          x: '0rem' // Начальная точка
+        },
+        {
+          x: '-6rem', // Сдвиг по оси X
+          duration: 0.3,
+          yoyo: true, // Возврат к начальной точке
+          repeat: 1, // Анимация выполняется один раз в прямом направлении и один раз в обратном
+          scrollTrigger: {
+            trigger: '.servies_section',
+            start: 'top 15%',
+            ease: 'power2.inOut',
+          }
         }
-      });
+      );
     }
   }
 
@@ -859,21 +876,66 @@ function animBlocks() {
           x: '0rem' // Начальная точка
         },
         {
-          x: '-7rem', // Сдвиг по оси X
-          duration: 0.5,
+          x: '-6rem', // Сдвиг по оси X
+          duration: 0.3,
           yoyo: true, // Возврат к начальной точке
           repeat: 1, // Анимация выполняется один раз в прямом направлении и один раз в обратном
           scrollTrigger: {
             trigger: '.production-det-result',
             start: 'top 30%',
-            ease: 'power2.in',
-            // markers: true
+            ease: 'power2.inOut',
+           
           }
         }
       );
     }
   }
 
+  function animSwiperDetailsMob() {
+    if (window.innerWidth < 768) {
+      gsap.fromTo(
+        '.details__swiper-wrapper',
+        {
+          x: '0rem' // Начальная точка
+        },
+        {
+          x: '-6rem', // Сдвиг по оси X
+          duration: 0.3,
+          yoyo: true, // Возврат к начальной точке
+          repeat: 1, // Анимация выполняется один раз в прямом направлении и один раз в обратном
+          scrollTrigger: {
+            trigger: '.details',
+            start: 'top 25%',
+            ease: 'power2.inOut',
+           
+          }
+        }
+      );
+    }
+  }
+
+  function animSwiperWorksMob() {
+    if (window.innerWidth < 768) {
+      gsap.fromTo(
+        '.works__swiper-mob',
+        {
+          x: '0rem' // Начальная точка
+        },
+        {
+          x: '-6rem', // Сдвиг по оси X
+          duration: 0.3,
+          yoyo: true, // Возврат к начальной точке
+          repeat: 1, // Анимация выполняется один раз в прямом направлении и один раз в обратном
+          scrollTrigger: {
+            trigger: '.works',
+            start: 'top 35%',
+            ease: 'power2.inOut',
+           
+          }
+        }
+      );
+    }
+  }
 
   try {
     // animMainBanner ()
@@ -918,13 +980,19 @@ function animBlocks() {
     animWorks();
   } catch {}
   try {
-    animProductionDetResult()
+    animProductionDetResult();
   } catch {}
   try {
-    animPromotion()
+    animPromotion();
   } catch {}
   try {
-    animSwiperProductionDetResultMob()
+    animSwiperProductionDetResultMob();
+  } catch {}
+  try {
+    animSwiperDetailsMob();
+  } catch {}
+  try {
+    animSwiperWorksMob();
   } catch {}
 }
 
@@ -1058,6 +1126,7 @@ function detailsSwiperMob() {
     grid: {
       rows: 2 // Установка двух строк
     },
+    speed: 800,
     spaceBetween: 16, // Расстояние между слайдами
     pagination: {
       el: '.details__swiper-pagination',
@@ -1219,13 +1288,11 @@ function productionDetResultSwiper() {
     // spaceBetween: rem(4),
     // grabCursor: true,
 
-
- 
     speed: 800,
     breakpoints: {
       300: {
         slidesPerView: 1.3,
-        spaceBetween: rem(2.4),
+        spaceBetween: rem(2.4)
         // centeredSlides: true,
         // loop: true,
       },
@@ -1233,7 +1300,7 @@ function productionDetResultSwiper() {
         slidesPerView: 2.4,
 
         //  slidesPerView: 2.6,
-        spaceBetween: rem(2.4),
+        spaceBetween: rem(2.4)
         // centeredSlides: true,
         // loop: true,
       },
@@ -1243,15 +1310,15 @@ function productionDetResultSwiper() {
         slidesPerView: 3,
         // slidesPerView: 2.6,
         // centeredSlides: true,
-            // loop: true,
-        spaceBetween: rem(4),
+        // loop: true,
+        spaceBetween: rem(4)
       },
       1024: {
         slidesPerView: 3,
-        spaceBetween: rem(4),
+        spaceBetween: rem(4)
         // loop: false,
         // centeredSlides: false
-      },
+      }
     }
   });
 }
