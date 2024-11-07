@@ -1699,6 +1699,7 @@
     padding: 2rem;
     border: 0.1rem solid rgba(232, 232, 232, 0.5);
     height: 27.9rem;
+    width: 99%;
   }
 
   .details__item-svg-box {
@@ -1999,7 +2000,7 @@
      margin: 0 -1.2rem;
 
 
-     
+
     width: calc(100% + 4rem); 
   } */
 
@@ -2144,6 +2145,34 @@
     right: 0;
     pointer-events: none;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .servies_row_item {
+
+    height: 43.5rem;
+ 
+  }
+
 
 }
 
