@@ -1361,10 +1361,10 @@
     margin-top: 10.69rem;
   }
 
-  .production-det-result__swiper {
+  /* .production-det-result__swiper {
     margin: 0 -4rem;
     width: calc(100% + 16rem);
-  }
+  } */
 
   .production-det-result__inner {
     gap: 4.3rem;
@@ -1995,10 +1995,13 @@
     margin-top: 10rem;
   }
 
-  .production-det-result__swiper {
-    /* margin: 0 -1.2rem;*/
+  /* .production-det-result__swiper {
+     margin: 0 -1.2rem;
+
+
+     
     width: calc(100% + 4rem); 
-  }
+  } */
 
 
  
@@ -3692,10 +3695,10 @@
     margin-top: 10rem;
   }
 
-  .production-det-result__swiper {
+  /* .production-det-result__swiper {
     margin: 0 -1.2rem;
     width: calc(100% + 4rem); 
-  }
+  } */
  
   .production-det-result__inner {
     gap: 3.2rem;
