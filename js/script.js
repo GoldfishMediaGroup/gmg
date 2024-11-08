@@ -844,14 +844,14 @@ function animBlocks() {
           x: '0rem' // Начальная точка
         },
         {
-          x: '-6rem', // Сдвиг по оси X
-          duration: 0.3,
+          x: '-4rem', // Сдвиг по оси X
+          duration: 0.4,
           yoyo: true, // Возврат к начальной точке
           repeat: 1, // Анимация выполняется один раз в прямом направлении и один раз в обратном
           scrollTrigger: {
             trigger: '.servies_section',
             start: 'top 15%',
-            ease: 'power2.inOut',
+            ease: 'power2',
           }
         }
       );
@@ -876,14 +876,14 @@ function animBlocks() {
           x: '0rem' // Начальная точка
         },
         {
-          x: '-6rem', // Сдвиг по оси X
-          duration: 0.3,
+          x: '-4rem', // Сдвиг по оси X
+          duration: 0.4,
           yoyo: true, // Возврат к начальной точке
           repeat: 1, // Анимация выполняется один раз в прямом направлении и один раз в обратном
           scrollTrigger: {
             trigger: '.production-det-result',
             start: 'top 30%',
-            ease: 'power2.inOut',
+            ease: 'power2',
            
           }
         }
@@ -899,14 +899,14 @@ function animBlocks() {
           x: '0rem' // Начальная точка
         },
         {
-          x: '-6rem', // Сдвиг по оси X
-          duration: 0.3,
+          x: '-4rem', // Сдвиг по оси X
+          duration: 0.4,
           yoyo: true, // Возврат к начальной точке
           repeat: 1, // Анимация выполняется один раз в прямом направлении и один раз в обратном
           scrollTrigger: {
             trigger: '.details',
             start: 'top 25%',
-            ease: 'power2.inOut',
+            ease: 'power2',
            
           }
         }
@@ -922,14 +922,14 @@ function animBlocks() {
           x: '0rem' // Начальная точка
         },
         {
-          x: '-6rem', // Сдвиг по оси X
-          duration: 0.3,
+          x: '-4rem', // Сдвиг по оси X
+          duration: 0.4,
           yoyo: true, // Возврат к начальной точке
           repeat: 1, // Анимация выполняется один раз в прямом направлении и один раз в обратном
           scrollTrigger: {
             trigger: '.works',
             start: 'top 35%',
-            ease: 'power2.inOut',
+            ease: 'power2',
            
           }
         }
