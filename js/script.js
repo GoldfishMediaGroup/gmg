@@ -99,17 +99,17 @@ function serviesSwiper() {
     breakpoints: {
       300: {
         slidesPerView: 1.3,
-        spaceBetween: rem(2),
+        spaceBetween: rem(2)
         // centeredSlides: true
       },
       576: {
         slidesPerView: 2.4,
-        spaceBetween: rem(4),
+        spaceBetween: rem(4)
         // centeredSlides: true
       },
       1024: {
         slidesPerView: 4,
-        spaceBetween: rem(4),
+        spaceBetween: rem(4)
         // loop: false,
         // centeredSlides: false
       },
@@ -120,34 +120,8 @@ function serviesSwiper() {
 
 function form() {
   $(document).on('click', '.feedback_button', function (e) {
-    // e.preventDefault();
-
-    // $(".input_req").each(function () {
-    //   validateInput.call($(this));
-    // });
-
-    // if (!$(".input_req").parent().parent().hasClass("_error")) {
-
-    //   $(".success_form").css("display", "block");
-    //   $(".success_form").addClass("active");
-
-    //   function closeSuccessForm() {
-    //     $(".success_form").fadeOut(400);
-    //     $(".success_form").removeClass("active");
-    //   }
-
-    //   setTimeout(closeSuccessForm, 2000);
-
-    //   $(".input_req").each(function () {
-    //     $(this).val('');
-    //     $(this).parent().parent().removeClass("active");
-    //   });
-    // }
-
     e.preventDefault();
-
     var form = $(this).closest('.form_send');
-
     form.find('.input_req').each(function () {
       validateInput.call($(this));
     });
@@ -178,32 +152,31 @@ function form() {
         }
       }
 
-      // Очистить все поля в текущей форме
       form.find('.input_req').each(function () {
         $(this).val('');
         $(this).parent().parent().removeClass('active');
       });
-
-      // $(".input_phone").inputmask("+7 (999) 999-99-99");
-
-      $('.input_phone').inputmask({
-        mask: '+7 (999) 999-99-99',
-        showMaskOnHover: false
-      });
-
-      // $(".input_mail").on("change", function () {
-      //   var email = $(this).val();
-      //   var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
-
-      //   if (pattern.test(email)) {
-      //     $(this).removeClass("error");
-      //   } else {
-      //     $(this).addClass("error");
-      //     $(this).val();
-      //   }
-      // });
     }
+    // Очистить все поля в текущей форме
+
   });
+
+  $('.input_phone').inputmask({
+    mask: '+7 (999) 999-99-99',
+    showMaskOnHover: false
+  });
+
+  // $(".input_mail").on("change", function () {
+  //   var email = $(this).val();
+  //   var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
+
+  //   if (pattern.test(email)) {
+  //     $(this).removeClass("error");
+  //   } else {
+  //     $(this).addClass("error");
+  //     $(this).val();
+  //   }
+  // });
 
   $('.input_req').on('focus', function () {
     $('.input_parent').removeClass('active');
@@ -227,6 +200,8 @@ function form() {
       $(this).parent().parent().addClass('_error');
     }
   });
+
+  // $(".input_phone").inputmask("+7 (999) 999-99-99");
 
   function validateInput() {
     var valueInput = $(this).val();
@@ -837,7 +812,6 @@ function animBlocks() {
       //   }
       // });
 
-
       gsap.fromTo(
         '.servies_row_swiper_wrapper',
         {
@@ -851,7 +825,7 @@ function animBlocks() {
           scrollTrigger: {
             trigger: '.servies_section',
             start: 'top 15%',
-            ease: 'power2',
+            ease: 'power2'
           }
         }
       );
@@ -883,8 +857,7 @@ function animBlocks() {
           scrollTrigger: {
             trigger: '.production-det-result',
             start: 'top 30%',
-            ease: 'power2',
-           
+            ease: 'power2'
           }
         }
       );
@@ -906,8 +879,7 @@ function animBlocks() {
           scrollTrigger: {
             trigger: '.details',
             start: 'top 25%',
-            ease: 'power2',
-           
+            ease: 'power2'
           }
         }
       );
@@ -929,8 +901,7 @@ function animBlocks() {
           scrollTrigger: {
             trigger: '.works',
             start: 'top 35%',
-            ease: 'power2',
-           
+            ease: 'power2'
           }
         }
       );
