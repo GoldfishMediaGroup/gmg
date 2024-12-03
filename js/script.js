@@ -124,6 +124,7 @@ function form() {
     var form = $(this).closest('.form_send');
     form.find('.input_req').each(function () {
       validateInput.call($(this));
+  
     });
 
     if (!form.find('.input_req').parent().parent().hasClass('_error')) {
@@ -156,8 +157,9 @@ function form() {
         $(this).val('');
         $(this).parent().parent().removeClass('active');
       });
+      form.find('textarea').val('');
     }
-    // Очистить все поля в текущей форме
+
 
   });
 
