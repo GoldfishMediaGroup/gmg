@@ -1113,7 +1113,7 @@ function worksSwiper() {
   let speed = 1200;
 
   const swipersLength = document.querySelectorAll('.works__vertical-swiper-slide').length / 2
-  console.log(swipersLength)
+
   const swiperVertical = new Swiper('.works__vertical-swiper', {
     slidesPerView: 'auto',
     speed: speed,
