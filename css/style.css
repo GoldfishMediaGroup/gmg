@@ -1269,7 +1269,6 @@ img {
   object-fit: cover;
 }
 
-
 .articles_big .works_item_name {
   max-width: 110.7rem;
 }
@@ -1316,8 +1315,6 @@ img {
 .articles_big:nth-child(2n) .works_item_image {
   margin-left: auto;
 }
-
-
 
 .works_item--posterisan .works_item_image,
 .works_item--rino .works_item_image {
@@ -1535,8 +1532,6 @@ img {
     transform: translateX(0);
   }
 }
-
-
 
 .btn_all {
   margin-top: 6.2rem;
@@ -4063,22 +4058,32 @@ footer {
   position: relative;
   max-width: 192rem;
   margin: 0 auto;
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 100%;
   z-index: 2;
 }
 
 .digital__container {
+  overflow: visible;
 }
 
 .digital__inner {
   display: flex;
   gap: 18.5rem;
+  position: relative;
 }
 
 .digital__title-box {
   width: 81.8rem;
   flex-shrink: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+
+  position: sticky;
+  top: 15rem;
+  left: 0;
 }
 
 .digital__title {
@@ -4189,12 +4194,21 @@ footer {
 }
 
 .digital__bg-box {
-  position: absolute;
-  bottom: 2rem;
-  width: 422.5rem;
-  height: 22.2rem;
-  left: -176rem;
+  /* position: absolute; */
+  /*bottom: 2rem; */
+  /* width: 422.5rem;
+  height: 22.2rem; */
+  width: 104.6rem;
+  height: 28.2rem;
+  margin-left: -17rem;
+  /* left: -176rem; */
   pointer-events: none;
+}
+
+.digital__bg-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .details {
@@ -4304,7 +4318,7 @@ footer {
   background: url(../newImages/detailsRightTop.svg) no-repeat top/contain;
 }
 
-.details__list  .details__item:nth-child(7n + 4) .details__item-svg-box {
+.details__list .details__item:nth-child(7n + 4) .details__item-svg-box {
   width: 19.5rem;
   height: 19.5rem;
 }
@@ -4330,7 +4344,6 @@ footer {
   height: 56.3rem;
   background: url(../newImages/detailsLeftTop.svg) no-repeat top/contain;
 }
-
 
 .details__list .details__item:nth-child(7n + 6) .details__item-svg-box {
   align-self: flex-end;
@@ -4396,7 +4409,6 @@ footer {
 .details__item--min-left-top {
   background: url(../newImages/detailsLeftTop.svg) no-repeat top/contain;
 } */
-
 
 .details__item-svg-box {
   flex-shrink: 0;
