@@ -123,6 +123,10 @@ img {
   width: 100%;
   height: 100%;
 }
+/* 
+* {
+  outline: 1px solid;
+} */
 
 .row,
 .row * {
@@ -1654,6 +1658,7 @@ img {
   position: absolute;
   z-index: 5;
   backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .contacts_map h3 {
@@ -1811,6 +1816,7 @@ img {
 .modal {
   background: rgba(9, 9, 9, 0.6);
   backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   /* height: 100vh; */
   height: 100%;
 }
@@ -3612,6 +3618,7 @@ footer {
   animation: fade-out-right 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .success_form.active {
@@ -3739,6 +3746,7 @@ footer {
   padding: 3rem 2rem;
   border: 1px solid rgba(189, 189, 189, 0.1);
   backdrop-filter: blur(16.899999618530273px);
+  -webkit-backdrop-filter: blur(16.899999618530273px);
   background: rgba(255, 255, 255, 0.01);
 }
 
@@ -3907,6 +3915,7 @@ footer {
   color: #fff;
   padding: 2.4rem 4rem;
   backdrop-filter: blur(60px);
+  -webkit-backdrop-filter: blur(60px);
   background-color: rgba(189, 189, 189, 0.1);
   clip-path: polygon(4rem 0, 100% 0, 100% 100%, 0 100%, 0 3rem);
   margin-right: 2rem;
@@ -3923,8 +3932,8 @@ footer {
 
 .stack__blur {
   position: absolute;
-  width: 150%;
-  height: 150vh;
+  width: 100%;
+  height: 100vh;
   background: url(../images/section_slick_blur.svg);
   left: 50%;
   top: 50%;
@@ -4228,8 +4237,11 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 36rem;
+  gap: 0rem;
   width: 74rem;
   height: 100%;
+  height: 69rem;
+  overflow: hidden;
   position: sticky;
   top: 15rem;
   left: 0;
@@ -4244,8 +4256,12 @@ footer {
 }
 
 .details__svg-wrapper {
-  width: 62.6rem;
-  height: 18.2rem;
+  /* width: 62.6rem;
+  height: 18.2rem; */
+
+    width: 84rem;
+  height: 84rem;
+  margin-left: -10rem;
 }
 .details__svg-wrapper img,
 .details__svg-wrapper svg,

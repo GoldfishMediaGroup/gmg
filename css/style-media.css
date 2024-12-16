@@ -1010,9 +1010,10 @@
   }
 
   .details__title-box {
-    gap: 21.27rem;
+    /* gap: 21.27rem; */
     width: 39.54rem;
     top: 10rem;
+    height: 42rem;
   }
 
   .details__title {
@@ -1020,8 +1021,10 @@
   }
 
   .details__svg-wrapper {
-    width: 33.45rem;
-    height: 9.72rem;
+    /* width: 33.45rem;
+    height: 9.72rem; */
+    width: 55rem;
+    height:  55rem;
   }
   .details__svg-wrapper img,
   .details__svg-wrapper svg,
@@ -1774,6 +1777,7 @@
   .details__title-box {
     width: 100%;
     position: static;
+    height: 100%;
   }
   .details__title {
   }
