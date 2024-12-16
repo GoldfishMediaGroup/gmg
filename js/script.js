@@ -56,6 +56,9 @@ document.addEventListener('DOMContentLoaded', () => {
   try {
     productionDetResultSwiper();
   } catch {}
+  try {
+    lottieAnimPulse();
+  } catch {}
 });
 
 function modals() {
@@ -1297,4 +1300,16 @@ function productionDetResultSwiper() {
       }
     }
   });
+}
+
+function lottieAnimPulse () {
+  // Инициализация Lottie анимации
+  lottie.loadAnimation({
+    container: document.querySelector('.details__svg-wrapper'), // Контейнер для анимации
+    renderer: 'svg', // Тип рендеринга (svg, canvas, html)
+    loop: true, // Зацикливание
+    autoplay: true, // Автоматическое воспроизведение
+    path: 'js/pulseLine.json' // Путь к вашему JSON файлу
+  });
+
 }
