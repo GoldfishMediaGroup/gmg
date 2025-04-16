@@ -3990,22 +3990,27 @@ footer {
 }
 
 .stack__list {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 6rem;
+  gap: 3rem 6rem;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-.stack__list--top {
+/* .stack__list--top {
 }
 
 .stack__list--middle {
 }
 
 .stack__list--bottom {
-}
+} */
 
 .stack__item {
+}
+
+.stack__item--empty {
+flex-basis: 100%;
 }
 
 .stack__img-box {
@@ -4067,7 +4072,7 @@ footer {
   position: relative;
   max-width: 192rem;
   margin: 0 auto;
-  /* overflow: hidden; */
+  overflow: hidden;
   width: 100%;
   z-index: 2;
 }
@@ -4259,7 +4264,7 @@ footer {
   width: 62.6rem;
   height: 18.2rem;
 
-    /* width: 84rem;
+  /* width: 84rem;
   height: 84rem; */
   /* margin-left: -10rem; */
 }

@@ -56,9 +56,9 @@ document.addEventListener('DOMContentLoaded', () => {
   try {
     productionDetResultSwiper();
   } catch {}
-  try {
-    lottieAnimPulse();
-  } catch {}
+  // try {
+  //   lottieAnimPulse();
+  // } catch {}
 });
 
 function modals() {
@@ -86,6 +86,19 @@ function modals() {
     }
     $(modal).fadeOut(400);
     $(modal).removeClass('active');
+  });
+
+  $(document).on('click', '.modal', function (e) {
+    // если кликнули по самой .modal, а не по его потомкам
+    if (e.target === this) {
+      $(this).fadeOut(400).removeClass('active');
+      $('body').css('overflow', '');
+      document.body.style.paddingRight = ``;
+      document.querySelector('header').style.paddingRight = ``;
+      if (document.querySelector('filter-btn')) {
+        document.querySelector('filter-btn').style.marginRight = ``;
+      }
+    }
   });
 }
 
@@ -1302,14 +1315,14 @@ function productionDetResultSwiper() {
   });
 }
 
-function lottieAnimPulse () {
-  // Инициализация Lottie анимации
-  lottie.loadAnimation({
-    container: document.querySelector('.details__svg-wrapper'), // Контейнер для анимации
-    renderer: 'svg', // Тип рендеринга (svg, canvas, html)
-    loop: true, // Зацикливание
-    autoplay: true, // Автоматическое воспроизведение
-    path: 'js/pulseLine.json' // Путь к вашему JSON файлу
-  });
+// function lottieAnimPulse () {
+//   // Инициализация Lottie анимации
+//   lottie.loadAnimation({
+//     container: document.querySelector('.details__svg-wrapper'), // Контейнер для анимации
+//     renderer: 'svg', // Тип рендеринга (svg, canvas, html)
+//     loop: true, // Зацикливание
+//     autoplay: true, // Автоматическое воспроизведение
+//     path: 'js/pulseLine.json' // Путь к вашему JSON файлу
+//   });
 
-}
+// }
